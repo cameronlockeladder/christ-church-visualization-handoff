@@ -1,0 +1,2159 @@
+{
+  "count": 359,
+  "files": [
+    {
+      "path": "CLAUDE_OPUS_4_7_DESIGN_PROMPT.md",
+      "bytes": 4891,
+      "mime": "text/markdown",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2646,
+      "mime": "text/markdown",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/aerials/01-overhead-campus-east-parking-lot.jpg",
+      "bytes": 1172884,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/aerials/02-front-parking-loop-overview.jpg",
+      "bytes": 985749,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/aerials/03-overhead-campus-south.jpg",
+      "bytes": 1168299,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/aerials/04-full-campus-aerial-wide.jpg",
+      "bytes": 1102904,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/aerials/05-eagleview-topdown-site.png",
+      "bytes": 1526642,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/aerials/ChristchurchLLimessagepic.jpg",
+      "bytes": 239534,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/reference-renders/01-overhead-cleaned-rough-draft-color-corrected-v3-rejected-placement.png",
+      "bytes": 4814549,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/reference-renders/01-overhead-project-composite-preview.png",
+      "bytes": 5554827,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-selected/DJI_20260408133009_0116_D.webp",
+      "bytes": 620086,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-selected/DJI_20260408133143_0156_D.webp",
+      "bytes": 698556,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-selected/DJI_20260408133240_0180_D.webp",
+      "bytes": 707100,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-selected/DJI_20260408133514_0251_D.webp",
+      "bytes": 521302,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-selected/DJI_20260408133550_0268_D.webp",
+      "bytes": 504166,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-selected/DJI_20260408133834_0301_D.webp",
+      "bytes": 595020,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-selected/DJI_20260408133916_0303_D.webp",
+      "bytes": 596742,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131843_0098_D.webp",
+      "bytes": 312536,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131847_0099_D.webp",
+      "bytes": 333076,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131850_0100_D.webp",
+      "bytes": 333354,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131853_0101_D.webp",
+      "bytes": 333380,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131856_0102_D.webp",
+      "bytes": 335476,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131858_0103_D.webp",
+      "bytes": 331032,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131901_0104_D.webp",
+      "bytes": 334576,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131903_0105_D.webp",
+      "bytes": 218646,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408131907_0106_D.webp",
+      "bytes": 303274,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408132947_0107_D.webp",
+      "bytes": 296664,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408132950_0108_D.webp",
+      "bytes": 303206,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408132953_0109_D.webp",
+      "bytes": 307522,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408132956_0110_D.webp",
+      "bytes": 309770,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408132959_0111_D.webp",
+      "bytes": 310026,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133001_0112_D.webp",
+      "bytes": 309804,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133003_0113_D.webp",
+      "bytes": 312838,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133005_0114_D.webp",
+      "bytes": 310518,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133007_0115_D.webp",
+      "bytes": 310580,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133009_0116_D.webp",
+      "bytes": 309928,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133011_0117_D.webp",
+      "bytes": 308078,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133014_0118_D.webp",
+      "bytes": 305810,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133017_0119_D.webp",
+      "bytes": 298158,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133020_0120_D.webp",
+      "bytes": 297582,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133021_0121_D.webp",
+      "bytes": 302394,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133023_0122_D.webp",
+      "bytes": 302214,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133025_0123_D.webp",
+      "bytes": 303128,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133027_0124_D.webp",
+      "bytes": 304554,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133030_0125_D.webp",
+      "bytes": 305540,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133032_0126_D.webp",
+      "bytes": 306812,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133035_0127_D.webp",
+      "bytes": 307782,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133038_0128_D.webp",
+      "bytes": 304598,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133041_0129_D.webp",
+      "bytes": 305702,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133043_0130_D.webp",
+      "bytes": 307134,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133045_0131_D.webp",
+      "bytes": 307122,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133047_0132_D.webp",
+      "bytes": 305902,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133049_0133_D.webp",
+      "bytes": 304940,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133051_0134_D.webp",
+      "bytes": 301480,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133054_0135_D.webp",
+      "bytes": 308434,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133057_0136_D.webp",
+      "bytes": 304664,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133100_0137_D.webp",
+      "bytes": 308310,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133102_0138_D.webp",
+      "bytes": 304214,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133104_0139_D.webp",
+      "bytes": 307374,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133106_0140_D.webp",
+      "bytes": 308072,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133108_0141_D.webp",
+      "bytes": 308840,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133110_0142_D.webp",
+      "bytes": 315836,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133112_0143_D.webp",
+      "bytes": 321682,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133115_0144_D.webp",
+      "bytes": 324914,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133118_0145_D.webp",
+      "bytes": 327620,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133120_0146_D.webp",
+      "bytes": 332256,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133122_0147_D.webp",
+      "bytes": 334418,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133124_0148_D.webp",
+      "bytes": 335552,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133126_0149_D.webp",
+      "bytes": 343768,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133128_0150_D.webp",
+      "bytes": 346856,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133130_0151_D.webp",
+      "bytes": 349922,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133133_0152_D.webp",
+      "bytes": 353240,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133136_0153_D.webp",
+      "bytes": 355462,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133139_0154_D.webp",
+      "bytes": 357756,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133141_0155_D.webp",
+      "bytes": 357894,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133143_0156_D.webp",
+      "bytes": 352010,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133145_0157_D.webp",
+      "bytes": 348536,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133147_0158_D.webp",
+      "bytes": 346876,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133149_0159_D.webp",
+      "bytes": 344286,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133151_0160_D.webp",
+      "bytes": 334562,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133154_0161_D.webp",
+      "bytes": 328230,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133156_0162_D.webp",
+      "bytes": 322412,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133159_0163_D.webp",
+      "bytes": 322668,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133201_0164_D.webp",
+      "bytes": 319846,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133203_0165_D.webp",
+      "bytes": 317848,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133205_0166_D.webp",
+      "bytes": 314804,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133207_0167_D.webp",
+      "bytes": 313768,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133209_0168_D.webp",
+      "bytes": 312610,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133212_0169_D.webp",
+      "bytes": 315554,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133214_0170_D.webp",
+      "bytes": 317660,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133216_0171_D.webp",
+      "bytes": 323470,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133220_0172_D.webp",
+      "bytes": 327762,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133222_0173_D.webp",
+      "bytes": 329404,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133225_0174_D.webp",
+      "bytes": 334510,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133226_0175_D.webp",
+      "bytes": 334960,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133228_0176_D.webp",
+      "bytes": 341446,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133230_0177_D.webp",
+      "bytes": 345698,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133233_0178_D.webp",
+      "bytes": 355754,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133236_0179_D.webp",
+      "bytes": 354782,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133240_0180_D.webp",
+      "bytes": 354956,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133242_0181_D.webp",
+      "bytes": 355384,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133247_0182_D.webp",
+      "bytes": 348990,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133249_0183_D.webp",
+      "bytes": 347180,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133250_0184_D.webp",
+      "bytes": 339270,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133252_0185_D.webp",
+      "bytes": 334720,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133255_0186_D.webp",
+      "bytes": 325142,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133257_0187_D.webp",
+      "bytes": 320218,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133300_0188_D.webp",
+      "bytes": 307918,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133303_0189_D.webp",
+      "bytes": 294910,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133305_0190_D.webp",
+      "bytes": 292560,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133306_0191_D.webp",
+      "bytes": 298512,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133308_0192_D.webp",
+      "bytes": 297298,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133310_0193_D.webp",
+      "bytes": 304186,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133311_0194_D.webp",
+      "bytes": 301446,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133314_0195_D.webp",
+      "bytes": 301018,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133317_0196_D.webp",
+      "bytes": 293982,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133320_0197_D.webp",
+      "bytes": 279066,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133322_0198_D.webp",
+      "bytes": 272156,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133324_0199_D.webp",
+      "bytes": 264510,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133326_0200_D.webp",
+      "bytes": 262134,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133328_0201_D.webp",
+      "bytes": 257004,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133329_0202_D.webp",
+      "bytes": 255216,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133331_0203_D.webp",
+      "bytes": 248796,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133334_0204_D.webp",
+      "bytes": 243652,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133337_0205_D.webp",
+      "bytes": 233518,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133339_0206_D.webp",
+      "bytes": 226850,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133342_0207_D.webp",
+      "bytes": 220816,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133343_0208_D.webp",
+      "bytes": 215042,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133345_0209_D.webp",
+      "bytes": 207614,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133347_0210_D.webp",
+      "bytes": 205698,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133349_0211_D.webp",
+      "bytes": 204420,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133350_0212_D.webp",
+      "bytes": 201930,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133353_0213_D.webp",
+      "bytes": 198190,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133355_0214_D.webp",
+      "bytes": 197164,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133358_0215_D.webp",
+      "bytes": 198220,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133401_0216_D.webp",
+      "bytes": 196814,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133402_0217_D.webp",
+      "bytes": 193328,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133404_0218_D.webp",
+      "bytes": 196572,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133406_0219_D.webp",
+      "bytes": 194064,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133408_0220_D.webp",
+      "bytes": 199146,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133410_0221_D.webp",
+      "bytes": 196584,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133412_0222_D.webp",
+      "bytes": 200490,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133415_0223_D.webp",
+      "bytes": 203780,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133417_0224_D.webp",
+      "bytes": 207520,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133420_0225_D.webp",
+      "bytes": 206206,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133422_0226_D.webp",
+      "bytes": 203386,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133424_0227_D.webp",
+      "bytes": 208854,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133426_0228_D.webp",
+      "bytes": 201618,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133427_0229_D.webp",
+      "bytes": 198550,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133429_0230_D.webp",
+      "bytes": 200622,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133431_0231_D.webp",
+      "bytes": 196092,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133433_0232_D.webp",
+      "bytes": 193750,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133436_0233_D.webp",
+      "bytes": 200154,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133439_0234_D.webp",
+      "bytes": 206360,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133441_0235_D.webp",
+      "bytes": 209484,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133443_0236_D.webp",
+      "bytes": 215002,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133445_0237_D.webp",
+      "bytes": 215224,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133447_0238_D.webp",
+      "bytes": 217846,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133448_0239_D.webp",
+      "bytes": 221222,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133450_0240_D.webp",
+      "bytes": 225570,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133453_0241_D.webp",
+      "bytes": 241044,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133455_0242_D.webp",
+      "bytes": 243392,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133458_0243_D.webp",
+      "bytes": 241114,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133500_0244_D.webp",
+      "bytes": 245646,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133502_0245_D.webp",
+      "bytes": 244028,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133504_0246_D.webp",
+      "bytes": 247908,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133506_0247_D.webp",
+      "bytes": 243774,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133508_0248_D.webp",
+      "bytes": 241698,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133509_0249_D.webp",
+      "bytes": 240438,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133512_0250_D.webp",
+      "bytes": 246168,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133514_0251_D.webp",
+      "bytes": 245794,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133517_0252_D.webp",
+      "bytes": 244660,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133520_0253_D.webp",
+      "bytes": 239898,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133522_0254_D.webp",
+      "bytes": 239260,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133523_0255_D.webp",
+      "bytes": 237438,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133525_0256_D.webp",
+      "bytes": 234852,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133527_0257_D.webp",
+      "bytes": 234854,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133529_0258_D.webp",
+      "bytes": 234700,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133531_0259_D.webp",
+      "bytes": 236010,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133534_0260_D.webp",
+      "bytes": 230714,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133536_0261_D.webp",
+      "bytes": 231844,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133539_0262_D.webp",
+      "bytes": 235600,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133540_0263_D.webp",
+      "bytes": 234764,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133542_0264_D.webp",
+      "bytes": 235762,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133544_0265_D.webp",
+      "bytes": 235036,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133546_0266_D.webp",
+      "bytes": 239508,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133548_0267_D.webp",
+      "bytes": 237334,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133550_0268_D.webp",
+      "bytes": 240060,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133553_0269_D.webp",
+      "bytes": 247794,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133555_0270_D.webp",
+      "bytes": 249262,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133558_0271_D.webp",
+      "bytes": 253644,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133600_0272_D.webp",
+      "bytes": 255054,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133602_0273_D.webp",
+      "bytes": 257450,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133604_0274_D.webp",
+      "bytes": 260812,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133605_0275_D.webp",
+      "bytes": 268018,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133607_0276_D.webp",
+      "bytes": 273508,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133609_0277_D.webp",
+      "bytes": 277466,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133612_0278_D.webp",
+      "bytes": 280440,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133614_0279_D.webp",
+      "bytes": 283246,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133617_0280_D.webp",
+      "bytes": 284228,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133619_0281_D.webp",
+      "bytes": 287660,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133621_0282_D.webp",
+      "bytes": 288300,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133623_0283_D.webp",
+      "bytes": 288910,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133624_0284_D.webp",
+      "bytes": 289360,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133626_0285_D.webp",
+      "bytes": 285642,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133628_0286_D.webp",
+      "bytes": 285308,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133631_0287_D.webp",
+      "bytes": 287206,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133634_0288_D.webp",
+      "bytes": 287968,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133636_0289_D.webp",
+      "bytes": 290758,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133639_0290_D.webp",
+      "bytes": 289802,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133640_0291_D.webp",
+      "bytes": 294100,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133642_0292_D.webp",
+      "bytes": 292154,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133644_0293_D.webp",
+      "bytes": 295104,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133646_0294_D.webp",
+      "bytes": 295034,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133648_0295_D.webp",
+      "bytes": 296920,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133651_0296_D.webp",
+      "bytes": 294264,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133653_0297_D.webp",
+      "bytes": 293590,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133656_0298_D.webp",
+      "bytes": 289442,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133658_0299_D.webp",
+      "bytes": 286296,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133700_0300_D.webp",
+      "bytes": 282466,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133834_0301_D.webp",
+      "bytes": 294808,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "assets/stills-webp/DJI_20260408133916_0303_D.webp",
+      "bytes": 294028,
+      "mime": "image/webp",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "docs/christ-church-install-logistics-text-only.md",
+      "bytes": 10858,
+      "mime": "text/markdown",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "docs/christ-church-install-logistics-text-only.pdf",
+      "bytes": 31524,
+      "mime": "application/pdf",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/christ-church-eagleview.pdf",
+      "bytes": 1189759,
+      "mime": "application/pdf",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-01.png",
+      "bytes": 272642,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-02.png",
+      "bytes": 1682512,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-03.png",
+      "bytes": 1269142,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-04.png",
+      "bytes": 1199695,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-05.png",
+      "bytes": 246172,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-06.png",
+      "bytes": 230624,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-07.png",
+      "bytes": 231977,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/pages/page-08.png",
+      "bytes": 183332,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "eagleview/site-aerial-eagleview.png",
+      "bytes": 1526642,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "meeting-recordings/transcript-1775157570850.zip",
+      "bytes": 3169274,
+      "mime": "application/zip",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "photoshop-drafts/01-overhead-campus-east-parking-lot.psd",
+      "bytes": 21088347,
+      "mime": "image/vnd.adobe.photoshop",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "photoshop-drafts/02-front-parking-loop-overview.psd",
+      "bytes": 15240370,
+      "mime": "image/vnd.adobe.photoshop",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "photoshop-drafts/03-overhead-campus-south.psd",
+      "bytes": 20507422,
+      "mime": "image/vnd.adobe.photoshop",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "photoshop-drafts/05-eagleview-topdown-site.psd",
+      "bytes": 6079613,
+      "mime": "image/vnd.adobe.photoshop",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "photoshop-drafts/christ-church-imessage.psd",
+      "bytes": 5438355,
+      "mime": "image/vnd.adobe.photoshop",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/app.js",
+      "bytes": 8214,
+      "mime": "text/javascript",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_000_DJI_20260408131843_0098_D.jpg",
+      "bytes": 742083,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_001_DJI_20260408131850_0100_D.jpg",
+      "bytes": 758577,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_002_DJI_20260408131856_0102_D.jpg",
+      "bytes": 761736,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_003_DJI_20260408131901_0104_D.jpg",
+      "bytes": 762988,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_004_DJI_20260408131907_0106_D.jpg",
+      "bytes": 728679,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_005_DJI_20260408132950_0108_D.jpg",
+      "bytes": 727896,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_006_DJI_20260408132956_0110_D.jpg",
+      "bytes": 737791,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_007_DJI_20260408133001_0112_D.jpg",
+      "bytes": 740620,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_008_DJI_20260408133005_0114_D.jpg",
+      "bytes": 741215,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_009_DJI_20260408133009_0116_D.jpg",
+      "bytes": 740010,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_010_DJI_20260408133014_0118_D.jpg",
+      "bytes": 735850,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_011_DJI_20260408133020_0120_D.jpg",
+      "bytes": 730394,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_012_DJI_20260408133023_0122_D.jpg",
+      "bytes": 733633,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_013_DJI_20260408133027_0124_D.jpg",
+      "bytes": 736456,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_014_DJI_20260408133032_0126_D.jpg",
+      "bytes": 736818,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_015_DJI_20260408133038_0128_D.jpg",
+      "bytes": 735233,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_016_DJI_20260408133043_0130_D.jpg",
+      "bytes": 736911,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_017_DJI_20260408133047_0132_D.jpg",
+      "bytes": 735693,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_018_DJI_20260408133051_0134_D.jpg",
+      "bytes": 736071,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_019_DJI_20260408133057_0136_D.jpg",
+      "bytes": 735932,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_020_DJI_20260408133102_0138_D.jpg",
+      "bytes": 737700,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_021_DJI_20260408133106_0140_D.jpg",
+      "bytes": 739221,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_022_DJI_20260408133110_0142_D.jpg",
+      "bytes": 748218,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_023_DJI_20260408133115_0144_D.jpg",
+      "bytes": 762202,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_024_DJI_20260408133120_0146_D.jpg",
+      "bytes": 775393,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_025_DJI_20260408133124_0148_D.jpg",
+      "bytes": 782938,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_026_DJI_20260408133128_0150_D.jpg",
+      "bytes": 791428,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_027_DJI_20260408133133_0152_D.jpg",
+      "bytes": 802285,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_028_DJI_20260408133139_0154_D.jpg",
+      "bytes": 800060,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_029_DJI_20260408133143_0156_D.jpg",
+      "bytes": 791246,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_030_DJI_20260408133147_0158_D.jpg",
+      "bytes": 781694,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_031_DJI_20260408133151_0160_D.jpg",
+      "bytes": 766191,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_032_DJI_20260408133156_0162_D.jpg",
+      "bytes": 745675,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_033_DJI_20260408133201_0164_D.jpg",
+      "bytes": 743818,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_034_DJI_20260408133205_0166_D.jpg",
+      "bytes": 731416,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_035_DJI_20260408133209_0168_D.jpg",
+      "bytes": 726254,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_036_DJI_20260408133214_0170_D.jpg",
+      "bytes": 735224,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_037_DJI_20260408133220_0172_D.jpg",
+      "bytes": 749127,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_038_DJI_20260408133225_0174_D.jpg",
+      "bytes": 759609,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_039_DJI_20260408133228_0176_D.jpg",
+      "bytes": 766774,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_040_DJI_20260408133233_0178_D.jpg",
+      "bytes": 784769,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_041_DJI_20260408133240_0180_D.jpg",
+      "bytes": 788799,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_042_DJI_20260408133247_0182_D.jpg",
+      "bytes": 778299,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_043_DJI_20260408133250_0184_D.jpg",
+      "bytes": 772131,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_044_DJI_20260408133255_0186_D.jpg",
+      "bytes": 747196,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_045_DJI_20260408133300_0188_D.jpg",
+      "bytes": 720016,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_046_DJI_20260408133305_0190_D.jpg",
+      "bytes": 702317,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_047_DJI_20260408133308_0192_D.jpg",
+      "bytes": 707528,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_048_DJI_20260408133311_0194_D.jpg",
+      "bytes": 712515,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_049_DJI_20260408133317_0196_D.jpg",
+      "bytes": 700027,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_050_DJI_20260408133322_0198_D.jpg",
+      "bytes": 672628,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_051_DJI_20260408133326_0200_D.jpg",
+      "bytes": 658945,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_052_DJI_20260408133329_0202_D.jpg",
+      "bytes": 648878,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_053_DJI_20260408133334_0204_D.jpg",
+      "bytes": 637483,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_054_DJI_20260408133339_0206_D.jpg",
+      "bytes": 613501,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_055_DJI_20260408133343_0208_D.jpg",
+      "bytes": 592555,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_056_DJI_20260408133347_0210_D.jpg",
+      "bytes": 581561,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_057_DJI_20260408133350_0212_D.jpg",
+      "bytes": 573961,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_058_DJI_20260408133355_0214_D.jpg",
+      "bytes": 562605,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_059_DJI_20260408133401_0216_D.jpg",
+      "bytes": 558849,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_060_DJI_20260408133404_0218_D.jpg",
+      "bytes": 558762,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_061_DJI_20260408133408_0220_D.jpg",
+      "bytes": 558874,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_062_DJI_20260408133412_0222_D.jpg",
+      "bytes": 560007,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_063_DJI_20260408133417_0224_D.jpg",
+      "bytes": 573721,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_064_DJI_20260408133422_0226_D.jpg",
+      "bytes": 571802,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_065_DJI_20260408133426_0228_D.jpg",
+      "bytes": 570123,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_066_DJI_20260408133429_0230_D.jpg",
+      "bytes": 569128,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_067_DJI_20260408133433_0232_D.jpg",
+      "bytes": 562371,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_068_DJI_20260408133439_0234_D.jpg",
+      "bytes": 574069,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_069_DJI_20260408133443_0236_D.jpg",
+      "bytes": 590619,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_070_DJI_20260408133447_0238_D.jpg",
+      "bytes": 593507,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_071_DJI_20260408133450_0240_D.jpg",
+      "bytes": 608521,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_072_DJI_20260408133455_0242_D.jpg",
+      "bytes": 632458,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_073_DJI_20260408133500_0244_D.jpg",
+      "bytes": 638628,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_074_DJI_20260408133504_0246_D.jpg",
+      "bytes": 640451,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_075_DJI_20260408133508_0248_D.jpg",
+      "bytes": 636870,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_076_DJI_20260408133512_0250_D.jpg",
+      "bytes": 645822,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_077_DJI_20260408133514_0251_D.jpg",
+      "bytes": 646265,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_078_DJI_20260408133517_0252_D.jpg",
+      "bytes": 646684,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_079_DJI_20260408133522_0254_D.jpg",
+      "bytes": 635969,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_080_DJI_20260408133525_0256_D.jpg",
+      "bytes": 631643,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_081_DJI_20260408133529_0258_D.jpg",
+      "bytes": 631272,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_082_DJI_20260408133534_0260_D.jpg",
+      "bytes": 626401,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_083_DJI_20260408133539_0262_D.jpg",
+      "bytes": 624742,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_084_DJI_20260408133542_0264_D.jpg",
+      "bytes": 626699,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_085_DJI_20260408133546_0266_D.jpg",
+      "bytes": 627239,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_086_DJI_20260408133550_0268_D.jpg",
+      "bytes": 627998,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_087_DJI_20260408133555_0270_D.jpg",
+      "bytes": 645186,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_088_DJI_20260408133600_0272_D.jpg",
+      "bytes": 655064,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_089_DJI_20260408133604_0274_D.jpg",
+      "bytes": 665273,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_090_DJI_20260408133607_0276_D.jpg",
+      "bytes": 681612,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_091_DJI_20260408133612_0278_D.jpg",
+      "bytes": 691912,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_092_DJI_20260408133617_0280_D.jpg",
+      "bytes": 700195,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_093_DJI_20260408133621_0282_D.jpg",
+      "bytes": 705708,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_094_DJI_20260408133624_0284_D.jpg",
+      "bytes": 707230,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_095_DJI_20260408133628_0286_D.jpg",
+      "bytes": 700001,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_096_DJI_20260408133634_0288_D.jpg",
+      "bytes": 703699,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_097_DJI_20260408133639_0290_D.jpg",
+      "bytes": 704845,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_098_DJI_20260408133642_0292_D.jpg",
+      "bytes": 706671,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_099_DJI_20260408133646_0294_D.jpg",
+      "bytes": 710414,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_100_DJI_20260408133651_0296_D.jpg",
+      "bytes": 709907,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_101_DJI_20260408133656_0298_D.jpg",
+      "bytes": 701332,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_102_DJI_20260408133700_0300_D.jpg",
+      "bytes": 687402,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/frames/frame_103_DJI_20260408133916_0303_D.jpg",
+      "bytes": 716917,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/assets/phase-map-08-22-2026.png",
+      "bytes": 4814549,
+      "mime": "image/png",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/frames-manifest.json",
+      "bytes": 40357,
+      "mime": "application/json",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/index.html",
+      "bytes": 3398,
+      "mime": "text/html",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "prototype/styles.css",
+      "bytes": 6391,
+      "mime": "text/css",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "sketches/scaffold-north-end-base.jpeg",
+      "bytes": 2524118,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "sketches/scaffold-steeple-gutter-line.jpeg",
+      "bytes": 2514610,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "sketches/sketch-north-end.jpeg",
+      "bytes": 419433,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "sketches/sketch-steeple.jpeg",
+      "bytes": 418805,
+      "mime": "image/jpeg",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "source-manifests/stills-manifest.json",
+      "bytes": 81862,
+      "mime": "application/json",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "source-notes/ChristBuild.rtf",
+      "bytes": 3084,
+      "mime": "application/rtf",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "source-notes/christ-church-gemini-meeting-notes-2026-05-21.txt",
+      "bytes": 53671,
+      "mime": "text/plain",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "source-notes/christ-church-staging-notes-breakdown-2026-05-21.md",
+      "bytes": 10088,
+      "mime": "text/markdown",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "source-notes/meeting-may-21-2026-email.eml",
+      "bytes": 21678,
+      "mime": "message/rfc822",
+      "source": "packaged handoff repo"
+    },
+    {
+      "path": "source-notes/notes-on-locke-and-ladder-christ-church-proposal.docx",
+      "bytes": 27148,
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "source": "packaged handoff repo"
+    }
+  ]
+}

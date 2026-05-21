@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Christ Church Install Staging Viewer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="viewer" aria-label="Christ Church visual viewer">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Christ Church Install</p>
+            <h1>Staging Viewer</h1>
+          </div>
+
+          <div class="controls">
+            <label class="date-control">
+              <span>Date</span>
+              <input id="dateInput" type="date" value="2026-08-22" />
+            </label>
+
+            <div class="segmented" role="tablist" aria-label="View mode">
+              <button id="rotationButton" class="active" type="button">Rotation</button>
+              <button id="mapButton" type="button">Phase Map</button>
+            </div>
+          </div>
+        </header>
+
+        <div class="image-stage">
+          <img id="rotationImage" class="site-image active" alt="Drone still of Christ Church" />
+          <img id="mapImage" class="site-image" src="./assets/phase-map-08-22-2026.png" alt="Annotated phase map for Christ Church staging" />
+          <div class="frame-meta">
+            <span id="frameLabel">Loading frames...</span>
+            <span id="viewLabel">Every-other still sequence</span>
+          </div>
+        </div>
+
+        <footer class="scrubber">
+          <button id="prevButton" type="button" aria-label="Previous frame">Prev</button>
+          <input id="frameSlider" type="range" min="0" max="0" value="0" />
+          <button id="nextButton" type="button" aria-label="Next frame">Next</button>
+          <button id="playButton" type="button">Play</button>
+        </footer>
+      </section>
+
+      <aside class="inspector" aria-label="Selected date details">
+        <div class="status-block">
+          <p class="eyebrow">Selected Date State</p>
+          <h2 id="phaseTitle">Phase 2: Sanctuary Roof Work</h2>
+          <p id="phaseRange" class="phase-range">08/10/2026 - 08/28/2026</p>
+        </div>
+
+        <div id="statusList" class="status-list"></div>
+
+        <section class="notes">
+          <h3>Board Questions This Answers</h3>
+          <ul>
+            <li>What will be visible from the parking areas?</li>
+            <li>Where are scaffold, dumpster, crane, and routes?</li>
+            <li>Which disruptions are active on the selected date?</li>
+            <li>What remains to be confirmed before board use?</li>
+          </ul>
+        </section>
+
+        <section class="legend">
+          <h3>Color Key</h3>
+          <div><span class="swatch blue"></span>Scaffolding</div>
+          <div><span class="swatch yellow"></span>Crane</div>
+          <div><span class="swatch green"></span>Dumpster</div>
+          <div><span class="swatch orange"></span>Material route</div>
+          <div><span class="swatch purple"></span>Forklift route</div>
+        </section>
+
+        <section class="open-items">
+          <h3>Still Needs Confirmation</h3>
+          <p>Exact canister location, dumpster footprint, porta potty service access, crew parking, final forklift path, and Irma's church calendar.</p>
+        </section>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+Delivered-To: cameron@lockeladder.com
+Received: by 2002:a05:7301:6448:b0:2ea:b0d9:6919 with SMTP id qe8csp505521dyb;
+        Thu, 21 May 2026 09:28:29 -0700 (PDT)
+X-Received: by 2002:a05:6808:200b:b0:485:3a28:a83f with SMTP id 5614622812f47-4853a28b526mr904261b6e.32.1779380909482;
+        Thu, 21 May 2026 09:28:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1779380909; cv=none;
+        d=google.com; s=arc-20240605;
+        b=HIp1buO17pt96Z3PJZVS19Rhv+F1fZgXk8sh+EQD4RwKoFpeAtjKPFsuwr8ZY+Jndw
+         RElQ0Snm7YAr+OnZFOejd+gsSzTETYtKrvgaAwQndJuwZIWIoUHcBf4tJaxsM+hYx4zX
+         0pi5Vss1KokvXNsEafazqAcdozQnxhOIPj4At1hfdBJZzSa8sbwnLSeg6Rccnz4pdUdd
+         Bf+u0E/9pwV/C+XEeXnsp+on0x0l1YOWPR5yToCzwCJBeWGG9WT78eV4E87OwEhBa19k
+         nEuGZm3uTtTlgeQ/DzWzcOIWFoTffpObKRyOCqrHR6fWnZTzxvJrQEj7RAd733n4omnG
+         EEbA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:from:subject:date:message-id:mime-version:dkim-signature;
+        bh=wCqXgh5SMUstIKJJ60fF04fxn5DBxTWzkwW344rCiy0=;
+        fh=xlZEm2CylstpGbk88PxNlVT8prReLBEzN73Sj7c2YT8=;
+        b=UTmELa5YrQJMwjxShMjJhECbVEKUZSFuE+n4bHzo4I0Oi6CkHnJpNZY176Y3HMR5G1
+         zsICz6GUaDXZ+rY9W6ZFIsZMI10LKCgSNPn4E82eSD++sC76EtfpL2Q2RhrHO2KhrdPD
+         P0QM6YvGQzkEwi1vCHyYGcViI6CPUhubGVlZm6UVEuI/31Zd01fpd4LS1a2Lo6ff8zvf
+         DaXGtRRoPr5rFZXaHXXYZWfcBywWHapbiFMnYdmo+XdEYQPfodVLFwc/XLUOopXSTXHH
+         IHaT5ooq9ASFPMQX+n831r9aqaB2nHCq10hnutXxbMOzV7dPysoP5nmuH4y4+MReexE2
+         ZzJg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20251104 header.b=LIYSozDw;
+       spf=pass (google.com: domain of 3rtipagwkb6ymksoto-tuzkymuumrk.iusigskxutruiqkrgjjkx.ius@rtc-meetings-api.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3rTIPagwKB6YMKSOTO-TUZKYMUUMRK.IUSIGSKXUTRUIQKRGJJKX.IUS@rtc-meetings-api.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com;
+       dara=neutral header.i=@lockeladder.com
+Return-Path: <3rTIPagwKB6YMKSOTO-TUZKYMUUMRK.IUSIGSKXUTRUIQKRGJJKX.IUS@rtc-meetings-api.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id 5614622812f47-48542edb741sor499455b6e.2.2026.05.21.09.28.29
+        for <cameron@lockeladder.com>
+        (Google Transport Security);
+        Thu, 21 May 2026 09:28:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3rtipagwkb6ymksoto-tuzkymuumrk.iusigskxutruiqkrgjjkx.ius@rtc-meetings-api.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com header.s=20251104 header.b=LIYSozDw;
+       spf=pass (google.com: domain of 3rtipagwkb6ymksoto-tuzkymuumrk.iusigskxutruiqkrgjjkx.ius@rtc-meetings-api.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3rTIPagwKB6YMKSOTO-TUZKYMUUMRK.IUSIGSKXUTRUIQKRGJJKX.IUS@rtc-meetings-api.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com;
+       dara=neutral header.i=@lockeladder.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20251104; t=1779380909; x=1779985709; darn=lockeladder.com;
+        h=to:from:subject:date:message-id:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=wCqXgh5SMUstIKJJ60fF04fxn5DBxTWzkwW344rCiy0=;
+        b=LIYSozDwoOVshlK0s1EcYmgmHAY7VMkZKEA9Kl9A3TwKjmLgopsJew5LOaPiSJzYNr
+         WSl3sSFVvSQZsF2LrhpIzagOGkSK1UQ4oN4CPNvSowpL0gXvzgGogRPcsL1gL5ApQqDl
+         8sTEPVHK7EUdL1pPURNB6+Y/P6Jv9RYzH5mrRmtGD9g7NrtbGoZccz4Zpr91sZGb8mUa
+         lzo5+fB41bGOZwV7+YpLXjZl7agnKivFIBmuL9E8hG6Sb/5FjozQPkGUwwfWTmwtgjOn
+         wcG2HiRXT56W4RiHCKKqc5wVpqdorREchVppHHd6T4wtfZyyK8MlR8YOG3Uq4OIDZi3H
+         cdTA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1779380909; x=1779985709;
+        h=to:from:subject:date:message-id:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=wCqXgh5SMUstIKJJ60fF04fxn5DBxTWzkwW344rCiy0=;
+        b=sL0hY+ERgRh/4p/e7TuuklNM8buA2PCZUAExxf7z+dS9/l8JWG3HtGN9NuUZGvhA9K
+         z+YMSL4DptNFSJaBJvE2rDMYAEfIo58z2FDf84mlUjLpD8uGAR9pge6xOLjfTp9dDYbv
+         F6h3NVC3kMTzFw288E3+j5dkSZH56zH7tEmDzbxe//3llmoPqj8N+NftwDmy71NIUg/V
+         jD9EjWp4zL75vHF8UtLUE73fPkfsDQJ1xQ4K88Q7Qhhnf3LGPp6QlnvtvgMYiPjVZD3p
+         deU9dUF0BMzOc8+YAai8EDLlbRD3Qbu0FonimIwGIzpG4OgDL1NestcNj8b3zhDa2EVU
+         vKeg==
+X-Gm-Message-State: AOJu0Yzx31LqMIXJEN4LphChVgtcYJK065AE30yf2g9rNq738gjFPIEt
+	JiIlsmOgKNK18LRkoJDdR3bkiBFX5qUhalbYaMMK7C6nbcdb8Yod5+Re70P3Pi9QHtyZHbaosx/
+	ZZXc=
+MIME-Version: 1.0
+X-Received: by 2002:a05:6808:1590:b0:47b:e166:a277 with SMTP id
+ 5614622812f47-4852dfdef5bmr1773032b6e.33.1779380909026; Thu, 21 May 2026
+ 09:28:29 -0700 (PDT)
+X-No-Auto-Attachment: 1
+X-Meet-Artifact-Email-Metadata: CgASJjU2UWhpNnlVSEFjcmV1OG5KUzQ3RHhJU09BSUlpZ0lnQUJnQkNBGgpXREdJRU9PRk1EIiwxbE91R29xaE45ZG02bVBPTUw0b1QzTlUzZ2pzakVCaW9vdVUzZE4xWklPcw==
+Message-ID: <autogen-java-887c255f-4bb9-44e3-94e5-da6d29d95fde@google.com>
+Date: Thu, 21 May 2026 16:28:29 +0000
+Subject: Notes: Meeting May 21, 2026 at 10:10 AM EDT
+From: Gemini <gemini-notes@google.com>
+To: cameron@lockeladder.com
+Content-Type: multipart/alternative; boundary="00000000000000b14a065256677a"
+
+--00000000000000b14a065256677a
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Notes from meeting May 21, 2026 at 10:10 AM EDT
+
+These notes have been sent to invited guests in your organization.
+
+Open meeting notes
+
+The content was auto-generated on May 21, 2026, 11:03 AM EDT and may  
+contain errors.
+
+
+Summary
+Stakeholders aligned on construction logistics and safety measures for the  
+upcoming sanctuary renovation and steeple project.
+
+
+Project Timeline and Scope
+Scaffolding construction begins July 6th with full site access by August  
+3rd. Targeted scaffolding limits costs by avoiding full sanctuary coverage.
+
+Site Logistics and Safety
+Perimeter walls ensure safety while designated staging areas manage  
+material transport. The team decided to use a color-coded photo map for  
+stakeholder communication.
+
+Operational Planning
+Phase 2 roof work concludes August 28th following debris management and  
+stained glass protection. Trusted partners are highlighted to demonstrate  
+local project alignment.
+
+
+Suggested next steps
+
+
+
+[Cameron] Create Site Map: Create a visual site map using color-coded  
+shapes to illustrate the locations of scaffolding, the crane, the dumpster,  
+and the material staging path on site photos. Use blue lines for  
+scaffolding, red for the crane, and green for the dumpster.
+
+[Chris] Contact Scheduler: Contact Irma to obtain the church schedule for  
+Sunday services and additional events. Use this calendar to coordinate the  
+removal of protective plywood from stained glass windows to ensure  
+functionality during service times.
+
+[Cameron] Add Canister Photo: Include an example photograph of a storage  
+canister within the final site visualization documents to clarify staging  
+expectations.
+
+[Cameron Reynolds] Include crane photo: Insert a picture of a truck crane  
+with its arms extended into the project documentation.
+
+[Chris Koelbl] Send vendor info: Text a list of project partners including  
+Imperial Crane, Great Lakes Quickspace, Bone Supply, and Prime Scaffolding.  
+Mention the business relationships these vendors share with the church  
+congregation.
+
+[Cameron Reynolds] Update documentation: Integrate the provided partner  
+details into the project site map and presentation.
+
+[Chris Koelbl] Submit project plan: Email the final site map and detailed  
+project overview by the end of tomorrow.
+
+
+We've updated the Decisions section based on your feedback.
+What do you think?
+
+
+Meeting records Document Notes by Gemini Video Recording
+
+
+Is the Next Steps section in this email helpful?
+Not Useful Email Useful Email
+
+
+Google LLC, 1600 Ampitheatre Parkway, Mountain View, CA 94043, USA
+
+You have received this email because meeting artifacts were initiated in  
+Google Meet.
+
+
+
+--00000000000000b14a065256677a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr" role=3D"article" style=3D"margin: auto; max-width: 672px; =
+min-width: 288px; text-align: left;"><style>
+    @import url(https://fonts.googleapis.com/css2?family=3DGoogle+Sans_old:=
+wght@400;500);
+    @import url(https://fonts.googleapis.com/css2?family=3DGoogle+Sans+Text=
+_old:wght@400;500);
+ =20
+    .link-button:hover {
+      background: #1e64d4 !important;
+    }
+    .artifact-chip:hover {
+      background: #fff !important;
+    }
+  </style><div style=3D"font-family: &quot;Google Sans Text&quot;, Roboto, =
+Arial, Helvetica, sans-serif; font-style: normal; font-weight: 400;border-r=
+adius: 24px; border: 1px solid #C4C7C5; padding: 48px 5% 5% 5%;"><div style=
+=3D"margin-bottom: 3.75%; padding: 0 16px; text-align: center;"><div><img a=
+lt=3D"" src=3D"https://gstatic.com/meet/symbols/pen_spark_gemini_gradient_6=
+4px.png" style=3D"display: inline-block; height: 32px; width: 32px; vertica=
+l-align: middle;"></div><div role=3D"heading" aria-level=3D"3" style=3D"col=
+or: #202124; font-family: &quot;Google Sans&quot;, Roboto, Arial, Helvetica=
+, sans-serif; font-size: 24px; line-height: 32px; margin: 32px 0 0;">Notes =
+from meeting May 21, 2026 at 10:10 AM EDT</div><div style=3D"color: #202124=
+; font-size: 14px; line-height: 20px; margin-top: 1.875%;">These notes have=
+ been sent to invited guests in your organization.</div><div style=3D"margi=
+n-top: 3.75%; white-space: nowrap;"><a href=3D"https://docs.google.com/docu=
+ment/d/1lOuGoqhN9dm6mPOML4oT3NU3gjsjEBioouU3dN1ZIOs/edit?usp=3Dmeet_tnfm_em=
+ail" class=3D"link-button" style=3D"background: #0B57D0; border: thin solid=
+ transparent; border-radius: 100px; display: inline-block; padding: 10px 24=
+px 10px 16px; text-decoration: none;"><span style=3D"color: #FFFFFF; displa=
+y: inline-block; font-size: 14px; font-weight: 500; line-height: 20px; marg=
+in-left: 8px; text-wrap: wrap; vertical-align: middle;" target=3D"_blank">O=
+pen meeting notes</span></a></div><div style=3D"color: #202124; display: in=
+line-block; font-size: 14px; line-height: 20px; margin-top: 3.75%; max-widt=
+h: 400px;">The content was auto-generated on May 21, 2026, 11:03 AM EDT and=
+ may contain errors.</div></div><div style=3D"background: #F8FAFD; border: =
+thin solid transparent; border-radius: 16px; color: #444746;font-family: &q=
+uot;Google Sans Text&quot;, Roboto, Arial, Helvetica, sans-serif; font-styl=
+e: normal; font-weight: 400;; margin-top: 8px; padding: 20px 24px;"><div st=
+yle=3D"color: #202124; font-size: 16px; line-height: 24px; margin-bottom: 1=
+2px;"><div role=3D"heading" aria-level=3D"4" style=3D"font-family: &quot;Go=
+ogle Sans&quot;, Roboto, Arial, Helvetica, sans-serif; font-weight: 500;">S=
+ummary</div>Stakeholders aligned on construction logistics and safety measu=
+res for the upcoming sanctuary renovation and steeple project.</div><div st=
+yle=3D"font-size: 16px; line-height: 24px; color: #202124;"><p><strong styl=
+e=3D"font-weight: 500;">Project Timeline and Scope</strong><br>Scaffolding =
+construction begins July 6th with full site access by August 3rd. Targeted =
+scaffolding limits costs by avoiding full sanctuary coverage.</p><p><strong=
+ style=3D"font-weight: 500;">Site Logistics and Safety</strong><br>Perimete=
+r walls ensure safety while designated staging areas manage material transp=
+ort. The team decided to use a color-coded photo map for stakeholder commun=
+ication.</p><p><strong style=3D"font-weight: 500;">Operational Planning</st=
+rong><br>Phase 2 roof work concludes August 28th following debris managemen=
+t and stained glass protection. Trusted partners are highlighted to demonst=
+rate local project alignment.</p></div></div><div style=3D"background: #F8F=
+AFD; border: thin solid transparent; border-radius: 16px; color: #444746;fo=
+nt-family: &quot;Google Sans Text&quot;, Roboto, Arial, Helvetica, sans-ser=
+if; font-style: normal; font-weight: 400;; margin-top: 8px; padding: 20px 2=
+4px;"><div style=3D"color: #202124; font-size: 16px; line-height: 24px; mar=
+gin-bottom: 12px;"><div role=3D"heading" aria-level=3D"4" style=3D"font-fam=
+ily: &quot;Google Sans&quot;, Roboto, Arial, Helvetica, sans-serif; font-we=
+ight: 500;">Suggested next steps</div></div><table style=3D"border-collapse=
+: collapse; width: 100%; color: #202124;"><tr><td style=3D"padding: 4px 0; =
+vertical-align: middle;"><img alt=3D"" src=3D"https://gstatic.com/meet/symb=
+ols/arrow_right_alt_blue_48px.png" style=3D"display: inline-block; height: =
+24px; width: 24px; vertical-align: middle;"></td><td style=3D"padding: 6px =
+0 6px 12px; width: 100%;"><span style=3D"font-size: 14px; line-height: 20px=
+;">[Cameron] Create Site Map: Create a visual site map using color-coded sh=
+apes to illustrate the locations of scaffolding, the crane, the dumpster, a=
+nd the material staging path on site photos. Use blue lines for scaffolding=
+, red for the crane, and green for the dumpster.</span></td></tr><tr><td st=
+yle=3D"padding: 4px 0; vertical-align: middle;"><img alt=3D"" src=3D"https:=
+//gstatic.com/meet/symbols/arrow_right_alt_blue_48px.png" style=3D"display:=
+ inline-block; height: 24px; width: 24px; vertical-align: middle;"></td><td=
+ style=3D"padding: 6px 0 6px 12px; width: 100%;"><span style=3D"font-size: =
+14px; line-height: 20px;">[Chris] Contact Scheduler: Contact Irma to obtain=
+ the church schedule for Sunday services and additional events. Use this ca=
+lendar to coordinate the removal of protective plywood from stained glass w=
+indows to ensure functionality during service times.</span></td></tr><tr><t=
+d style=3D"padding: 4px 0; vertical-align: middle;"><img alt=3D"" src=3D"ht=
+tps://gstatic.com/meet/symbols/arrow_right_alt_blue_48px.png" style=3D"disp=
+lay: inline-block; height: 24px; width: 24px; vertical-align: middle;"></td=
+><td style=3D"padding: 6px 0 6px 12px; width: 100%;"><span style=3D"font-si=
+ze: 14px; line-height: 20px;">[Cameron] Add Canister Photo: Include an exam=
+ple photograph of a storage canister within the final site visualization do=
+cuments to clarify staging expectations.</span></td></tr><tr><td style=3D"p=
+adding: 4px 0; vertical-align: middle;"><img alt=3D"" src=3D"https://gstati=
+c.com/meet/symbols/arrow_right_alt_blue_48px.png" style=3D"display: inline-=
+block; height: 24px; width: 24px; vertical-align: middle;"></td><td style=
+=3D"padding: 6px 0 6px 12px; width: 100%;"><span style=3D"font-size: 14px; =
+line-height: 20px;">[Cameron Reynolds] Include crane photo: Insert a pictur=
+e of a truck crane with its arms extended into the project documentation.</=
+span></td></tr><tr><td style=3D"padding: 4px 0; vertical-align: middle;"><i=
+mg alt=3D"" src=3D"https://gstatic.com/meet/symbols/arrow_right_alt_blue_48=
+px.png" style=3D"display: inline-block; height: 24px; width: 24px; vertical=
+-align: middle;"></td><td style=3D"padding: 6px 0 6px 12px; width: 100%;"><=
+span style=3D"font-size: 14px; line-height: 20px;">[Chris Koelbl] Send vend=
+or info: Text a list of project partners including Imperial Crane, Great La=
+kes Quickspace, Bone Supply, and Prime Scaffolding. Mention the business re=
+lationships these vendors share with the church congregation.</span></td></=
+tr><tr><td style=3D"padding: 4px 0; vertical-align: middle;"><img alt=3D"" =
+src=3D"https://gstatic.com/meet/symbols/arrow_right_alt_blue_48px.png" styl=
+e=3D"display: inline-block; height: 24px; width: 24px; vertical-align: midd=
+le;"></td><td style=3D"padding: 6px 0 6px 12px; width: 100%;"><span style=
+=3D"font-size: 14px; line-height: 20px;">[Cameron Reynolds] Update document=
+ation: Integrate the provided partner details into the project site map and=
+ presentation.</span></td></tr><tr><td style=3D"padding: 4px 0; vertical-al=
+ign: middle;"><img alt=3D"" src=3D"https://gstatic.com/meet/symbols/arrow_r=
+ight_alt_blue_48px.png" style=3D"display: inline-block; height: 24px; width=
+: 24px; vertical-align: middle;"></td><td style=3D"padding: 6px 0 6px 12px;=
+ width: 100%;"><span style=3D"font-size: 14px; line-height: 20px;">[Chris K=
+oelbl] Submit project plan: Email the final site map and detailed project o=
+verview by the end of tomorrow.</span></td></tr></table></div><div style=3D=
+"background: #F8FAFD; border: thin solid transparent; border-radius: 16px; =
+color: #444746;font-family: &quot;Google Sans Text&quot;, Roboto, Arial, He=
+lvetica, sans-serif; font-style: normal; font-weight: 400;; margin-top: 8px=
+; padding: 20px 24px;"><table style=3D"border-collapse: collapse; width: 10=
+0%; color: #202124;"><tr><td style=3D"padding: 4px 0; vertical-align: middl=
+e;"><img alt=3D"" src=3D"https://gstatic.com/meet/symbols/feedback_blue_48p=
+x.png" style=3D"display: inline-block; height: 24px; width: 24px; vertical-=
+align: middle;"></td><td style=3D"padding: 6px 0 6px 12px; width: 100%;"><s=
+pan style=3D"font-size: 14px; line-height: 20px;">We've updated the <a href=
+=3D"https://docs.google.com/document/d/1lOuGoqhN9dm6mPOML4oT3NU3gjsjEBioouU=
+3dN1ZIOs/edit?usp=3Dmeet_tnfm_email&tab=3Dt.jn0c5s6msf3n#heading=3Dh.2u94wq=
+hn9aqb" style=3D"text-decoration: none;" target=3D"_blank">Decisions sectio=
+n</a> based on your feedback.<br><strong>What do you think?</strong></span>=
+</td></tr></table></div><div style=3D"background: #F8FAFD; border: thin sol=
+id transparent; border-radius: 16px; color: #444746;font-family: &quot;Goog=
+le Sans Text&quot;, Roboto, Arial, Helvetica, sans-serif; font-style: norma=
+l; font-weight: 400;; margin-top: 8px; padding: 20px 24px;"><table role=3D"=
+presentation" style=3D"border-collapse: collapse; width: 100%;"><tr><td sty=
+le=3D"padding-right: 24px; vertical-align: middle; white-space: nowrap;"><i=
+mg alt=3D"Meeting records" src=3D"https://gstatic.com/meet/symbols/attachme=
+nt_grey_48px.png" style=3D"display: inline-block; height: 24px; width: 24px=
+; vertical-align: middle;"></td><td style=3D"width: 100%;"><a href=3D"https=
+://docs.google.com/document/d/1lOuGoqhN9dm6mPOML4oT3NU3gjsjEBioouU3dN1ZIOs/=
+edit?usp=3Dmeet_tnfm_email" class=3D"artifact-chip" style=3D"background: #f=
+0f4f9; border-radius: 32px; border: 1px solid #C4C7C5; display: inline-bloc=
+k; margin: 4px 8px 4px 0; padding: 4px 16px 4px 12px; text-decoration: none=
+; white-space: nowrap;"><img alt=3D"Document" src=3D"https://gstatic.com/me=
+et/symbols/article_blue_40px.png" style=3D"display: inline-block; height: 2=
+0px; width: 20px; vertical-align: middle;"><span style=3D"color: #001D35; d=
+isplay: inline-block; font-size: 12px; font-weight: 500; line-height: 16px;=
+ margin-left: 8px; text-wrap: wrap; vertical-align: middle;" target=3D"_bla=
+nk">Notes by Gemini</span></a><a href=3D"https://drive.google.com/file/d/1Z=
+erTJT2rItRy0N0SNeN5ttwTUGUplpLJ/view?usp=3Ddrive_web" class=3D"artifact-chi=
+p" style=3D"background: #f0f4f9; border-radius: 32px; border: 1px solid #C4=
+C7C5; display: inline-block; margin: 4px 8px 4px 0; padding: 4px 16px 4px 1=
+2px; text-decoration: none; white-space: nowrap;"><img alt=3D"Video" src=3D=
+"https://gstatic.com/meet/symbols/movie_red_40px.png" style=3D"display: inl=
+ine-block; height: 20px; width: 20px; vertical-align: middle;"><span style=
+=3D"color: #001D35; display: inline-block; font-size: 12px; font-weight: 50=
+0; line-height: 16px; margin-left: 8px; text-wrap: wrap; vertical-align: mi=
+ddle;" target=3D"_blank">Recording</span></a></td></tr></table></div></div>=
+<div style=3D"margin-top: 32px; text-align: center;"><span style=3D"color: =
+#202124; font-size: 14px; line-height: 20px;font-family: &quot;Google Sans =
+Text&quot;, Roboto, Arial, Helvetica, sans-serif; font-style: normal; font-=
+weight: 400;;">Is the Next Steps section in this email helpful?</span><div =
+style=3D"margin-top: 12px;"><a href=3Dhttps:&#47;&#47;google.qualtrics.com&=
+#47;jfe&#47;form&#47;SV_9QxRQt0INmZXh7o?thumbs&#61;down&amp;owner&#61;nongo=
+ogler&amp;confid&#61;56Qhi6yUHAcreu8nJS47DxISOAIIigIgABgBCA style=3D"displa=
+y:inline-block;"><img alt=3D"Not Useful Email" src=3D"https://gstatic.com/m=
+eet/symbols/thumb_down_grey_48px.png" style=3D"display: inline-block; heigh=
+t: 24px; width: 24px; vertical-align: middle;"></a><a href=3Dhttps:&#47;&#4=
+7;google.qualtrics.com&#47;jfe&#47;form&#47;SV_9QxRQt0INmZXh7o?thumbs&#61;u=
+p&amp;owner&#61;nongoogler&amp;confid&#61;56Qhi6yUHAcreu8nJS47DxISOAIIigIgA=
+BgBCA style=3D"display:inline-block;margin-left:12px;"><img alt=3D"Useful E=
+mail" src=3D"https://gstatic.com/meet/symbols/thumb_up_grey_48px.png" style=
+=3D"display: inline-block; height: 24px; width: 24px; vertical-align: middl=
+e;"></a></div></div><div role=3D"contentinfo" style=3D"color: #444746;font-=
+family: &quot;Google Sans Text&quot;, Roboto, Arial, Helvetica, sans-serif;=
+ font-style: normal; font-weight: 400;font-size: 12px; line-height: 16px; m=
+argin-top: 32px; text-align: center;"><address style=3D"font-style: normal;=
+">Google LLC, 1600 Ampitheatre Parkway, Mountain View, CA 94043, USA</addre=
+ss><div>You have received this email because meeting artifacts were initiat=
+ed in Google Meet.</div></div></div>
+--00000000000000b14a065256677a--

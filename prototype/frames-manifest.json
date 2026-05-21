@@ -1,0 +1,912 @@
+{
+  "sourceFolder": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills",
+  "generatedAt": "2026-05-21 15:01:39",
+  "selectionRule": "Every other DJI still, with key shot anchors 0116/0156/0251/0268 forced in if needed. Manifest order rotated so frame 0180 loads first and loops forward from there. Removed source frame numbers 0098-0106 from slider playback.",
+  "count": 99,
+  "frames": [
+    {
+      "index": 0,
+      "frame": "assets/frames/frame_041_DJI_20260408133240_0180_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133240_0180_D.JPG",
+      "filename": "DJI_20260408133240_0180_D.JPG",
+      "capture": "20260408133240",
+      "frameNo": "0180",
+      "anchor": false
+    },
+    {
+      "index": 1,
+      "frame": "assets/frames/frame_042_DJI_20260408133247_0182_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133247_0182_D.JPG",
+      "filename": "DJI_20260408133247_0182_D.JPG",
+      "capture": "20260408133247",
+      "frameNo": "0182",
+      "anchor": false
+    },
+    {
+      "index": 2,
+      "frame": "assets/frames/frame_043_DJI_20260408133250_0184_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133250_0184_D.JPG",
+      "filename": "DJI_20260408133250_0184_D.JPG",
+      "capture": "20260408133250",
+      "frameNo": "0184",
+      "anchor": false
+    },
+    {
+      "index": 3,
+      "frame": "assets/frames/frame_044_DJI_20260408133255_0186_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133255_0186_D.JPG",
+      "filename": "DJI_20260408133255_0186_D.JPG",
+      "capture": "20260408133255",
+      "frameNo": "0186",
+      "anchor": false
+    },
+    {
+      "index": 4,
+      "frame": "assets/frames/frame_045_DJI_20260408133300_0188_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133300_0188_D.JPG",
+      "filename": "DJI_20260408133300_0188_D.JPG",
+      "capture": "20260408133300",
+      "frameNo": "0188",
+      "anchor": false
+    },
+    {
+      "index": 5,
+      "frame": "assets/frames/frame_046_DJI_20260408133305_0190_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133305_0190_D.JPG",
+      "filename": "DJI_20260408133305_0190_D.JPG",
+      "capture": "20260408133305",
+      "frameNo": "0190",
+      "anchor": false
+    },
+    {
+      "index": 6,
+      "frame": "assets/frames/frame_047_DJI_20260408133308_0192_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133308_0192_D.JPG",
+      "filename": "DJI_20260408133308_0192_D.JPG",
+      "capture": "20260408133308",
+      "frameNo": "0192",
+      "anchor": false
+    },
+    {
+      "index": 7,
+      "frame": "assets/frames/frame_048_DJI_20260408133311_0194_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133311_0194_D.JPG",
+      "filename": "DJI_20260408133311_0194_D.JPG",
+      "capture": "20260408133311",
+      "frameNo": "0194",
+      "anchor": false
+    },
+    {
+      "index": 8,
+      "frame": "assets/frames/frame_049_DJI_20260408133317_0196_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133317_0196_D.JPG",
+      "filename": "DJI_20260408133317_0196_D.JPG",
+      "capture": "20260408133317",
+      "frameNo": "0196",
+      "anchor": false
+    },
+    {
+      "index": 9,
+      "frame": "assets/frames/frame_050_DJI_20260408133322_0198_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133322_0198_D.JPG",
+      "filename": "DJI_20260408133322_0198_D.JPG",
+      "capture": "20260408133322",
+      "frameNo": "0198",
+      "anchor": false
+    },
+    {
+      "index": 10,
+      "frame": "assets/frames/frame_051_DJI_20260408133326_0200_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133326_0200_D.JPG",
+      "filename": "DJI_20260408133326_0200_D.JPG",
+      "capture": "20260408133326",
+      "frameNo": "0200",
+      "anchor": false
+    },
+    {
+      "index": 11,
+      "frame": "assets/frames/frame_052_DJI_20260408133329_0202_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133329_0202_D.JPG",
+      "filename": "DJI_20260408133329_0202_D.JPG",
+      "capture": "20260408133329",
+      "frameNo": "0202",
+      "anchor": false
+    },
+    {
+      "index": 12,
+      "frame": "assets/frames/frame_053_DJI_20260408133334_0204_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133334_0204_D.JPG",
+      "filename": "DJI_20260408133334_0204_D.JPG",
+      "capture": "20260408133334",
+      "frameNo": "0204",
+      "anchor": false
+    },
+    {
+      "index": 13,
+      "frame": "assets/frames/frame_054_DJI_20260408133339_0206_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133339_0206_D.JPG",
+      "filename": "DJI_20260408133339_0206_D.JPG",
+      "capture": "20260408133339",
+      "frameNo": "0206",
+      "anchor": false
+    },
+    {
+      "index": 14,
+      "frame": "assets/frames/frame_055_DJI_20260408133343_0208_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133343_0208_D.JPG",
+      "filename": "DJI_20260408133343_0208_D.JPG",
+      "capture": "20260408133343",
+      "frameNo": "0208",
+      "anchor": false
+    },
+    {
+      "index": 15,
+      "frame": "assets/frames/frame_056_DJI_20260408133347_0210_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133347_0210_D.JPG",
+      "filename": "DJI_20260408133347_0210_D.JPG",
+      "capture": "20260408133347",
+      "frameNo": "0210",
+      "anchor": false
+    },
+    {
+      "index": 16,
+      "frame": "assets/frames/frame_057_DJI_20260408133350_0212_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133350_0212_D.JPG",
+      "filename": "DJI_20260408133350_0212_D.JPG",
+      "capture": "20260408133350",
+      "frameNo": "0212",
+      "anchor": false
+    },
+    {
+      "index": 17,
+      "frame": "assets/frames/frame_058_DJI_20260408133355_0214_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133355_0214_D.JPG",
+      "filename": "DJI_20260408133355_0214_D.JPG",
+      "capture": "20260408133355",
+      "frameNo": "0214",
+      "anchor": false
+    },
+    {
+      "index": 18,
+      "frame": "assets/frames/frame_059_DJI_20260408133401_0216_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133401_0216_D.JPG",
+      "filename": "DJI_20260408133401_0216_D.JPG",
+      "capture": "20260408133401",
+      "frameNo": "0216",
+      "anchor": false
+    },
+    {
+      "index": 19,
+      "frame": "assets/frames/frame_060_DJI_20260408133404_0218_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133404_0218_D.JPG",
+      "filename": "DJI_20260408133404_0218_D.JPG",
+      "capture": "20260408133404",
+      "frameNo": "0218",
+      "anchor": false
+    },
+    {
+      "index": 20,
+      "frame": "assets/frames/frame_061_DJI_20260408133408_0220_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133408_0220_D.JPG",
+      "filename": "DJI_20260408133408_0220_D.JPG",
+      "capture": "20260408133408",
+      "frameNo": "0220",
+      "anchor": false
+    },
+    {
+      "index": 21,
+      "frame": "assets/frames/frame_062_DJI_20260408133412_0222_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133412_0222_D.JPG",
+      "filename": "DJI_20260408133412_0222_D.JPG",
+      "capture": "20260408133412",
+      "frameNo": "0222",
+      "anchor": false
+    },
+    {
+      "index": 22,
+      "frame": "assets/frames/frame_063_DJI_20260408133417_0224_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133417_0224_D.JPG",
+      "filename": "DJI_20260408133417_0224_D.JPG",
+      "capture": "20260408133417",
+      "frameNo": "0224",
+      "anchor": false
+    },
+    {
+      "index": 23,
+      "frame": "assets/frames/frame_064_DJI_20260408133422_0226_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133422_0226_D.JPG",
+      "filename": "DJI_20260408133422_0226_D.JPG",
+      "capture": "20260408133422",
+      "frameNo": "0226",
+      "anchor": false
+    },
+    {
+      "index": 24,
+      "frame": "assets/frames/frame_065_DJI_20260408133426_0228_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133426_0228_D.JPG",
+      "filename": "DJI_20260408133426_0228_D.JPG",
+      "capture": "20260408133426",
+      "frameNo": "0228",
+      "anchor": false
+    },
+    {
+      "index": 25,
+      "frame": "assets/frames/frame_066_DJI_20260408133429_0230_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133429_0230_D.JPG",
+      "filename": "DJI_20260408133429_0230_D.JPG",
+      "capture": "20260408133429",
+      "frameNo": "0230",
+      "anchor": false
+    },
+    {
+      "index": 26,
+      "frame": "assets/frames/frame_067_DJI_20260408133433_0232_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133433_0232_D.JPG",
+      "filename": "DJI_20260408133433_0232_D.JPG",
+      "capture": "20260408133433",
+      "frameNo": "0232",
+      "anchor": false
+    },
+    {
+      "index": 27,
+      "frame": "assets/frames/frame_068_DJI_20260408133439_0234_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133439_0234_D.JPG",
+      "filename": "DJI_20260408133439_0234_D.JPG",
+      "capture": "20260408133439",
+      "frameNo": "0234",
+      "anchor": false
+    },
+    {
+      "index": 28,
+      "frame": "assets/frames/frame_069_DJI_20260408133443_0236_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133443_0236_D.JPG",
+      "filename": "DJI_20260408133443_0236_D.JPG",
+      "capture": "20260408133443",
+      "frameNo": "0236",
+      "anchor": false
+    },
+    {
+      "index": 29,
+      "frame": "assets/frames/frame_070_DJI_20260408133447_0238_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133447_0238_D.JPG",
+      "filename": "DJI_20260408133447_0238_D.JPG",
+      "capture": "20260408133447",
+      "frameNo": "0238",
+      "anchor": false
+    },
+    {
+      "index": 30,
+      "frame": "assets/frames/frame_071_DJI_20260408133450_0240_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133450_0240_D.JPG",
+      "filename": "DJI_20260408133450_0240_D.JPG",
+      "capture": "20260408133450",
+      "frameNo": "0240",
+      "anchor": false
+    },
+    {
+      "index": 31,
+      "frame": "assets/frames/frame_072_DJI_20260408133455_0242_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133455_0242_D.JPG",
+      "filename": "DJI_20260408133455_0242_D.JPG",
+      "capture": "20260408133455",
+      "frameNo": "0242",
+      "anchor": false
+    },
+    {
+      "index": 32,
+      "frame": "assets/frames/frame_073_DJI_20260408133500_0244_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133500_0244_D.JPG",
+      "filename": "DJI_20260408133500_0244_D.JPG",
+      "capture": "20260408133500",
+      "frameNo": "0244",
+      "anchor": false
+    },
+    {
+      "index": 33,
+      "frame": "assets/frames/frame_074_DJI_20260408133504_0246_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133504_0246_D.JPG",
+      "filename": "DJI_20260408133504_0246_D.JPG",
+      "capture": "20260408133504",
+      "frameNo": "0246",
+      "anchor": false
+    },
+    {
+      "index": 34,
+      "frame": "assets/frames/frame_075_DJI_20260408133508_0248_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133508_0248_D.JPG",
+      "filename": "DJI_20260408133508_0248_D.JPG",
+      "capture": "20260408133508",
+      "frameNo": "0248",
+      "anchor": false
+    },
+    {
+      "index": 35,
+      "frame": "assets/frames/frame_076_DJI_20260408133512_0250_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133512_0250_D.JPG",
+      "filename": "DJI_20260408133512_0250_D.JPG",
+      "capture": "20260408133512",
+      "frameNo": "0250",
+      "anchor": false
+    },
+    {
+      "index": 36,
+      "frame": "assets/frames/frame_077_DJI_20260408133514_0251_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133514_0251_D.JPG",
+      "filename": "DJI_20260408133514_0251_D.JPG",
+      "capture": "20260408133514",
+      "frameNo": "0251",
+      "anchor": true
+    },
+    {
+      "index": 37,
+      "frame": "assets/frames/frame_078_DJI_20260408133517_0252_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133517_0252_D.JPG",
+      "filename": "DJI_20260408133517_0252_D.JPG",
+      "capture": "20260408133517",
+      "frameNo": "0252",
+      "anchor": false
+    },
+    {
+      "index": 38,
+      "frame": "assets/frames/frame_079_DJI_20260408133522_0254_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133522_0254_D.JPG",
+      "filename": "DJI_20260408133522_0254_D.JPG",
+      "capture": "20260408133522",
+      "frameNo": "0254",
+      "anchor": false
+    },
+    {
+      "index": 39,
+      "frame": "assets/frames/frame_080_DJI_20260408133525_0256_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133525_0256_D.JPG",
+      "filename": "DJI_20260408133525_0256_D.JPG",
+      "capture": "20260408133525",
+      "frameNo": "0256",
+      "anchor": false
+    },
+    {
+      "index": 40,
+      "frame": "assets/frames/frame_081_DJI_20260408133529_0258_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133529_0258_D.JPG",
+      "filename": "DJI_20260408133529_0258_D.JPG",
+      "capture": "20260408133529",
+      "frameNo": "0258",
+      "anchor": false
+    },
+    {
+      "index": 41,
+      "frame": "assets/frames/frame_082_DJI_20260408133534_0260_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133534_0260_D.JPG",
+      "filename": "DJI_20260408133534_0260_D.JPG",
+      "capture": "20260408133534",
+      "frameNo": "0260",
+      "anchor": false
+    },
+    {
+      "index": 42,
+      "frame": "assets/frames/frame_083_DJI_20260408133539_0262_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133539_0262_D.JPG",
+      "filename": "DJI_20260408133539_0262_D.JPG",
+      "capture": "20260408133539",
+      "frameNo": "0262",
+      "anchor": false
+    },
+    {
+      "index": 43,
+      "frame": "assets/frames/frame_084_DJI_20260408133542_0264_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133542_0264_D.JPG",
+      "filename": "DJI_20260408133542_0264_D.JPG",
+      "capture": "20260408133542",
+      "frameNo": "0264",
+      "anchor": false
+    },
+    {
+      "index": 44,
+      "frame": "assets/frames/frame_085_DJI_20260408133546_0266_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133546_0266_D.JPG",
+      "filename": "DJI_20260408133546_0266_D.JPG",
+      "capture": "20260408133546",
+      "frameNo": "0266",
+      "anchor": false
+    },
+    {
+      "index": 45,
+      "frame": "assets/frames/frame_086_DJI_20260408133550_0268_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133550_0268_D.JPG",
+      "filename": "DJI_20260408133550_0268_D.JPG",
+      "capture": "20260408133550",
+      "frameNo": "0268",
+      "anchor": true
+    },
+    {
+      "index": 46,
+      "frame": "assets/frames/frame_087_DJI_20260408133555_0270_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133555_0270_D.JPG",
+      "filename": "DJI_20260408133555_0270_D.JPG",
+      "capture": "20260408133555",
+      "frameNo": "0270",
+      "anchor": false
+    },
+    {
+      "index": 47,
+      "frame": "assets/frames/frame_088_DJI_20260408133600_0272_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133600_0272_D.JPG",
+      "filename": "DJI_20260408133600_0272_D.JPG",
+      "capture": "20260408133600",
+      "frameNo": "0272",
+      "anchor": false
+    },
+    {
+      "index": 48,
+      "frame": "assets/frames/frame_089_DJI_20260408133604_0274_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133604_0274_D.JPG",
+      "filename": "DJI_20260408133604_0274_D.JPG",
+      "capture": "20260408133604",
+      "frameNo": "0274",
+      "anchor": false
+    },
+    {
+      "index": 49,
+      "frame": "assets/frames/frame_090_DJI_20260408133607_0276_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133607_0276_D.JPG",
+      "filename": "DJI_20260408133607_0276_D.JPG",
+      "capture": "20260408133607",
+      "frameNo": "0276",
+      "anchor": false
+    },
+    {
+      "index": 50,
+      "frame": "assets/frames/frame_091_DJI_20260408133612_0278_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133612_0278_D.JPG",
+      "filename": "DJI_20260408133612_0278_D.JPG",
+      "capture": "20260408133612",
+      "frameNo": "0278",
+      "anchor": false
+    },
+    {
+      "index": 51,
+      "frame": "assets/frames/frame_092_DJI_20260408133617_0280_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133617_0280_D.JPG",
+      "filename": "DJI_20260408133617_0280_D.JPG",
+      "capture": "20260408133617",
+      "frameNo": "0280",
+      "anchor": false
+    },
+    {
+      "index": 52,
+      "frame": "assets/frames/frame_093_DJI_20260408133621_0282_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133621_0282_D.JPG",
+      "filename": "DJI_20260408133621_0282_D.JPG",
+      "capture": "20260408133621",
+      "frameNo": "0282",
+      "anchor": false
+    },
+    {
+      "index": 53,
+      "frame": "assets/frames/frame_094_DJI_20260408133624_0284_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133624_0284_D.JPG",
+      "filename": "DJI_20260408133624_0284_D.JPG",
+      "capture": "20260408133624",
+      "frameNo": "0284",
+      "anchor": false
+    },
+    {
+      "index": 54,
+      "frame": "assets/frames/frame_095_DJI_20260408133628_0286_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133628_0286_D.JPG",
+      "filename": "DJI_20260408133628_0286_D.JPG",
+      "capture": "20260408133628",
+      "frameNo": "0286",
+      "anchor": false
+    },
+    {
+      "index": 55,
+      "frame": "assets/frames/frame_096_DJI_20260408133634_0288_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133634_0288_D.JPG",
+      "filename": "DJI_20260408133634_0288_D.JPG",
+      "capture": "20260408133634",
+      "frameNo": "0288",
+      "anchor": false
+    },
+    {
+      "index": 56,
+      "frame": "assets/frames/frame_097_DJI_20260408133639_0290_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133639_0290_D.JPG",
+      "filename": "DJI_20260408133639_0290_D.JPG",
+      "capture": "20260408133639",
+      "frameNo": "0290",
+      "anchor": false
+    },
+    {
+      "index": 57,
+      "frame": "assets/frames/frame_098_DJI_20260408133642_0292_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133642_0292_D.JPG",
+      "filename": "DJI_20260408133642_0292_D.JPG",
+      "capture": "20260408133642",
+      "frameNo": "0292",
+      "anchor": false
+    },
+    {
+      "index": 58,
+      "frame": "assets/frames/frame_099_DJI_20260408133646_0294_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133646_0294_D.JPG",
+      "filename": "DJI_20260408133646_0294_D.JPG",
+      "capture": "20260408133646",
+      "frameNo": "0294",
+      "anchor": false
+    },
+    {
+      "index": 59,
+      "frame": "assets/frames/frame_100_DJI_20260408133651_0296_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133651_0296_D.JPG",
+      "filename": "DJI_20260408133651_0296_D.JPG",
+      "capture": "20260408133651",
+      "frameNo": "0296",
+      "anchor": false
+    },
+    {
+      "index": 60,
+      "frame": "assets/frames/frame_101_DJI_20260408133656_0298_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133656_0298_D.JPG",
+      "filename": "DJI_20260408133656_0298_D.JPG",
+      "capture": "20260408133656",
+      "frameNo": "0298",
+      "anchor": false
+    },
+    {
+      "index": 61,
+      "frame": "assets/frames/frame_102_DJI_20260408133700_0300_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133700_0300_D.JPG",
+      "filename": "DJI_20260408133700_0300_D.JPG",
+      "capture": "20260408133700",
+      "frameNo": "0300",
+      "anchor": false
+    },
+    {
+      "index": 62,
+      "frame": "assets/frames/frame_103_DJI_20260408133916_0303_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133916_0303_D.JPG",
+      "filename": "DJI_20260408133916_0303_D.JPG",
+      "capture": "20260408133916",
+      "frameNo": "0303",
+      "anchor": false
+    },
+    {
+      "index": 63,
+      "frame": "assets/frames/frame_005_DJI_20260408132950_0108_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408132950_0108_D.JPG",
+      "filename": "DJI_20260408132950_0108_D.JPG",
+      "capture": "20260408132950",
+      "frameNo": "0108",
+      "anchor": false
+    },
+    {
+      "index": 64,
+      "frame": "assets/frames/frame_006_DJI_20260408132956_0110_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408132956_0110_D.JPG",
+      "filename": "DJI_20260408132956_0110_D.JPG",
+      "capture": "20260408132956",
+      "frameNo": "0110",
+      "anchor": false
+    },
+    {
+      "index": 65,
+      "frame": "assets/frames/frame_007_DJI_20260408133001_0112_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133001_0112_D.JPG",
+      "filename": "DJI_20260408133001_0112_D.JPG",
+      "capture": "20260408133001",
+      "frameNo": "0112",
+      "anchor": false
+    },
+    {
+      "index": 66,
+      "frame": "assets/frames/frame_008_DJI_20260408133005_0114_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133005_0114_D.JPG",
+      "filename": "DJI_20260408133005_0114_D.JPG",
+      "capture": "20260408133005",
+      "frameNo": "0114",
+      "anchor": false
+    },
+    {
+      "index": 67,
+      "frame": "assets/frames/frame_009_DJI_20260408133009_0116_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133009_0116_D.JPG",
+      "filename": "DJI_20260408133009_0116_D.JPG",
+      "capture": "20260408133009",
+      "frameNo": "0116",
+      "anchor": true
+    },
+    {
+      "index": 68,
+      "frame": "assets/frames/frame_010_DJI_20260408133014_0118_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133014_0118_D.JPG",
+      "filename": "DJI_20260408133014_0118_D.JPG",
+      "capture": "20260408133014",
+      "frameNo": "0118",
+      "anchor": false
+    },
+    {
+      "index": 69,
+      "frame": "assets/frames/frame_011_DJI_20260408133020_0120_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133020_0120_D.JPG",
+      "filename": "DJI_20260408133020_0120_D.JPG",
+      "capture": "20260408133020",
+      "frameNo": "0120",
+      "anchor": false
+    },
+    {
+      "index": 70,
+      "frame": "assets/frames/frame_012_DJI_20260408133023_0122_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133023_0122_D.JPG",
+      "filename": "DJI_20260408133023_0122_D.JPG",
+      "capture": "20260408133023",
+      "frameNo": "0122",
+      "anchor": false
+    },
+    {
+      "index": 71,
+      "frame": "assets/frames/frame_013_DJI_20260408133027_0124_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133027_0124_D.JPG",
+      "filename": "DJI_20260408133027_0124_D.JPG",
+      "capture": "20260408133027",
+      "frameNo": "0124",
+      "anchor": false
+    },
+    {
+      "index": 72,
+      "frame": "assets/frames/frame_014_DJI_20260408133032_0126_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133032_0126_D.JPG",
+      "filename": "DJI_20260408133032_0126_D.JPG",
+      "capture": "20260408133032",
+      "frameNo": "0126",
+      "anchor": false
+    },
+    {
+      "index": 73,
+      "frame": "assets/frames/frame_015_DJI_20260408133038_0128_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133038_0128_D.JPG",
+      "filename": "DJI_20260408133038_0128_D.JPG",
+      "capture": "20260408133038",
+      "frameNo": "0128",
+      "anchor": false
+    },
+    {
+      "index": 74,
+      "frame": "assets/frames/frame_016_DJI_20260408133043_0130_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133043_0130_D.JPG",
+      "filename": "DJI_20260408133043_0130_D.JPG",
+      "capture": "20260408133043",
+      "frameNo": "0130",
+      "anchor": false
+    },
+    {
+      "index": 75,
+      "frame": "assets/frames/frame_017_DJI_20260408133047_0132_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133047_0132_D.JPG",
+      "filename": "DJI_20260408133047_0132_D.JPG",
+      "capture": "20260408133047",
+      "frameNo": "0132",
+      "anchor": false
+    },
+    {
+      "index": 76,
+      "frame": "assets/frames/frame_018_DJI_20260408133051_0134_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133051_0134_D.JPG",
+      "filename": "DJI_20260408133051_0134_D.JPG",
+      "capture": "20260408133051",
+      "frameNo": "0134",
+      "anchor": false
+    },
+    {
+      "index": 77,
+      "frame": "assets/frames/frame_019_DJI_20260408133057_0136_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133057_0136_D.JPG",
+      "filename": "DJI_20260408133057_0136_D.JPG",
+      "capture": "20260408133057",
+      "frameNo": "0136",
+      "anchor": false
+    },
+    {
+      "index": 78,
+      "frame": "assets/frames/frame_020_DJI_20260408133102_0138_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133102_0138_D.JPG",
+      "filename": "DJI_20260408133102_0138_D.JPG",
+      "capture": "20260408133102",
+      "frameNo": "0138",
+      "anchor": false
+    },
+    {
+      "index": 79,
+      "frame": "assets/frames/frame_021_DJI_20260408133106_0140_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133106_0140_D.JPG",
+      "filename": "DJI_20260408133106_0140_D.JPG",
+      "capture": "20260408133106",
+      "frameNo": "0140",
+      "anchor": false
+    },
+    {
+      "index": 80,
+      "frame": "assets/frames/frame_022_DJI_20260408133110_0142_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133110_0142_D.JPG",
+      "filename": "DJI_20260408133110_0142_D.JPG",
+      "capture": "20260408133110",
+      "frameNo": "0142",
+      "anchor": false
+    },
+    {
+      "index": 81,
+      "frame": "assets/frames/frame_023_DJI_20260408133115_0144_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133115_0144_D.JPG",
+      "filename": "DJI_20260408133115_0144_D.JPG",
+      "capture": "20260408133115",
+      "frameNo": "0144",
+      "anchor": false
+    },
+    {
+      "index": 82,
+      "frame": "assets/frames/frame_024_DJI_20260408133120_0146_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133120_0146_D.JPG",
+      "filename": "DJI_20260408133120_0146_D.JPG",
+      "capture": "20260408133120",
+      "frameNo": "0146",
+      "anchor": false
+    },
+    {
+      "index": 83,
+      "frame": "assets/frames/frame_025_DJI_20260408133124_0148_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133124_0148_D.JPG",
+      "filename": "DJI_20260408133124_0148_D.JPG",
+      "capture": "20260408133124",
+      "frameNo": "0148",
+      "anchor": false
+    },
+    {
+      "index": 84,
+      "frame": "assets/frames/frame_026_DJI_20260408133128_0150_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133128_0150_D.JPG",
+      "filename": "DJI_20260408133128_0150_D.JPG",
+      "capture": "20260408133128",
+      "frameNo": "0150",
+      "anchor": false
+    },
+    {
+      "index": 85,
+      "frame": "assets/frames/frame_027_DJI_20260408133133_0152_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133133_0152_D.JPG",
+      "filename": "DJI_20260408133133_0152_D.JPG",
+      "capture": "20260408133133",
+      "frameNo": "0152",
+      "anchor": false
+    },
+    {
+      "index": 86,
+      "frame": "assets/frames/frame_028_DJI_20260408133139_0154_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133139_0154_D.JPG",
+      "filename": "DJI_20260408133139_0154_D.JPG",
+      "capture": "20260408133139",
+      "frameNo": "0154",
+      "anchor": false
+    },
+    {
+      "index": 87,
+      "frame": "assets/frames/frame_029_DJI_20260408133143_0156_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133143_0156_D.JPG",
+      "filename": "DJI_20260408133143_0156_D.JPG",
+      "capture": "20260408133143",
+      "frameNo": "0156",
+      "anchor": true
+    },
+    {
+      "index": 88,
+      "frame": "assets/frames/frame_030_DJI_20260408133147_0158_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133147_0158_D.JPG",
+      "filename": "DJI_20260408133147_0158_D.JPG",
+      "capture": "20260408133147",
+      "frameNo": "0158",
+      "anchor": false
+    },
+    {
+      "index": 89,
+      "frame": "assets/frames/frame_031_DJI_20260408133151_0160_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133151_0160_D.JPG",
+      "filename": "DJI_20260408133151_0160_D.JPG",
+      "capture": "20260408133151",
+      "frameNo": "0160",
+      "anchor": false
+    },
+    {
+      "index": 90,
+      "frame": "assets/frames/frame_032_DJI_20260408133156_0162_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133156_0162_D.JPG",
+      "filename": "DJI_20260408133156_0162_D.JPG",
+      "capture": "20260408133156",
+      "frameNo": "0162",
+      "anchor": false
+    },
+    {
+      "index": 91,
+      "frame": "assets/frames/frame_033_DJI_20260408133201_0164_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133201_0164_D.JPG",
+      "filename": "DJI_20260408133201_0164_D.JPG",
+      "capture": "20260408133201",
+      "frameNo": "0164",
+      "anchor": false
+    },
+    {
+      "index": 92,
+      "frame": "assets/frames/frame_034_DJI_20260408133205_0166_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133205_0166_D.JPG",
+      "filename": "DJI_20260408133205_0166_D.JPG",
+      "capture": "20260408133205",
+      "frameNo": "0166",
+      "anchor": false
+    },
+    {
+      "index": 93,
+      "frame": "assets/frames/frame_035_DJI_20260408133209_0168_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133209_0168_D.JPG",
+      "filename": "DJI_20260408133209_0168_D.JPG",
+      "capture": "20260408133209",
+      "frameNo": "0168",
+      "anchor": false
+    },
+    {
+      "index": 94,
+      "frame": "assets/frames/frame_036_DJI_20260408133214_0170_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133214_0170_D.JPG",
+      "filename": "DJI_20260408133214_0170_D.JPG",
+      "capture": "20260408133214",
+      "frameNo": "0170",
+      "anchor": false
+    },
+    {
+      "index": 95,
+      "frame": "assets/frames/frame_037_DJI_20260408133220_0172_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133220_0172_D.JPG",
+      "filename": "DJI_20260408133220_0172_D.JPG",
+      "capture": "20260408133220",
+      "frameNo": "0172",
+      "anchor": false
+    },
+    {
+      "index": 96,
+      "frame": "assets/frames/frame_038_DJI_20260408133225_0174_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133225_0174_D.JPG",
+      "filename": "DJI_20260408133225_0174_D.JPG",
+      "capture": "20260408133225",
+      "frameNo": "0174",
+      "anchor": false
+    },
+    {
+      "index": 97,
+      "frame": "assets/frames/frame_039_DJI_20260408133228_0176_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133228_0176_D.JPG",
+      "filename": "DJI_20260408133228_0176_D.JPG",
+      "capture": "20260408133228",
+      "frameNo": "0176",
+      "anchor": false
+    },
+    {
+      "index": 98,
+      "frame": "assets/frames/frame_040_DJI_20260408133233_0178_D.jpg",
+      "source": "/Users/cameron/Desktop/Chicago Trip April 2026/2026/2026-04-08/Christ Church 3DGS OpenSplat Final v1/images/stills/DJI_20260408133233_0178_D.JPG",
+      "filename": "DJI_20260408133233_0178_D.JPG",
+      "capture": "20260408133233",
+      "frameNo": "0178",
+      "anchor": false
+    }
+  ],
+  "startFrameNo": "0180",
+  "startFilename": "DJI_20260408133240_0180_D.JPG",
+  "removedFrameNos": [
+    "0098",
+    "0099",
+    "0100",
+    "0101",
+    "0102",
+    "0103",
+    "0104",
+    "0105",
+    "0106"
+  ]
+}
