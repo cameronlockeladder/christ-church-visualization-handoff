@@ -128,19 +128,21 @@
         </div>
 
         <div class="scrubber" data-testid="scrubber">
-          <input
-            class="scrubber-input"
-            id="scrubber-input"
-            type="range"
-            min="0"
-            max="8"
-            step="1"
-            value="0"
-            aria-label="Project timeline step"
-            data-testid="scrubber-input"
-          />
-          <div class="scrubber-track">
-            <div class="scrubber-progress" id="scrubber-progress"></div>
+          <div class="scrubber-rail">
+            <div class="scrubber-track">
+              <div class="scrubber-progress" id="scrubber-progress"></div>
+            </div>
+            <input
+              class="scrubber-input"
+              id="scrubber-input"
+              type="range"
+              min="0"
+              max="8"
+              step="1"
+              value="0"
+              aria-label="Project timeline step"
+              data-testid="scrubber-input"
+            />
           </div>
           <ol class="scrubber-ticks" id="scrubber-ticks"></ol>
         </div>
