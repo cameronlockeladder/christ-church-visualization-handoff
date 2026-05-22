@@ -4,120 +4,107 @@
 
 > Build a landing page: https://github.com/cameronlockeladder/christ-church-visualization-handoff/tree/emergent-overlay-handoff
 
-## Latest Iteration (2026-05-22 · v2)
+## Iteration History
 
-User feedback requested:
-
-- Board-only access gate (street number "501" as the code).
-- Fix Christ Church + Locke & Ladder logos at the top-left, both visible at all times.
-- All Inter — no serif anywhere.
-- Move the color key inside the bounds of the photo with a slight gradient
-  behind it. New color key: **Yellow = Crane, Blue = Scaffolding, Green =
-  Dumpster, Orange = Materials & forklift path.**
-- Hyper-functional copy. No AI-slop. A layperson in the church should
-  understand each step in seconds.
-- Add a Partners section after the timeline.
-- Site-vibe Gemini reference behind a classy button (not immediately visible).
-- Total Investment at the very bottom — one all-in number ($1,073,660),
-  labelled "Total Investment", factual tone, no itemization, not the
-  headline.
-
-## What This Is
-
-A static, board-facing interactive timeline for the Christ Church Oak
-Brook roof restoration project (July – August 2026). Built as pure HTML +
-CSS + vanilla JS. Three source files: `index.html`, `styles.css`,
-`app.js`, plus an `assets/` directory.
-
-## Architecture
-
-| Concern        | Choice                                                     |
-| -------------- | ---------------------------------------------------------- |
-| Hosting target | Vercel (static)                                            |
-| Stack          | Pure HTML, CSS, vanilla JS (no React, no build)            |
-| Serving        | `serve` for local preview only                             |
-| Backend        | Stubbed `/api/health` only — site is purely static         |
-| Auth           | Session-only access gate · code = street number ("501")    |
-| Fonts          | Inter (300 / 400 / 500 / 600 / 700)                        |
-
-## Personas
-
-- **Board member** (primary) — opens the page after the announcement,
-  enters the street number, scrubs through 9 phase states, comes away with
-  a clear understanding of what is on site, when, and what the project
-  costs all-in.
-- **Pastor / staff** (secondary) — answers congregant questions, sometimes
-  shares the link.
-- **Locke & Ladder operator** — uses it in board meetings as a sales /
-  scope-confirmation artifact.
-
-## Core Requirements
-
-- 9 timeline steps matching the handoff manifest exactly.
-- Stage image stack at 2392×1792 aspect ratio (base + photo overlays +
-  recolorable mask overlays).
-- Mask overlays recolor:
-  - active → `#C8651E` (warm rust)
-  - completed → `#3F7A50` (green)
-- Color key inside the image (bottom-right) with a soft gradient behind it
-  fading the road area so the legend is readable.
-- Access gate gating the timeline.
-- Plain-language copy on every step.
-- Reference button → lightbox with the Gemini concept image plus a clear
-  "not accurate for placement" disclaimer.
-- Single all-in Total Investment at the bottom of the page.
-
-## What's Been Implemented
-
-### 2026-05-22 (v1)
-- 9-step scrubber, mask-based recoloring, base image + overlay stack.
+### v1 (2026-05-22)
+- 9-step scrubber with mask-based recoloring, base image + overlay stack.
 - Scrubber + tick navigation, prev/next, play/pause, keyboard arrow keys.
 
-### 2026-05-22 (v2 — current)
+### v2 (2026-05-22)
 - Session-only access gate (`501` unlocks).
 - Fixed top-left brand pill — Christ Church wordmark + Locke & Ladder icon.
-- Color key moved inside the photo with a corner gradient.
+- Color key moved inside the photo with corner gradient.
 - Updated color key palette: yellow / blue / green / orange.
 - Hyper-functional copy rewrite on every step and every note.
 - Total Investment block at the bottom — $1,073,660 all-in, factual tone.
 - Reference button + lightbox modal for the Gemini concept image.
-- Partners section scaffolded — drop logos into `assets/partners/` and add
-  entries to the `PARTNERS` array in `app.js`.
 - All Inter (Cormorant Garamond removed).
 
-### Verified
+### v3 (2026-05-22 — current)
+- **Partner marquee**: 5 partner logos pulled from the handoff repo loop
+  left-to-right, infinitely. Logos shown in natural brand colors — Bone
+  Roofing's white-on-transparent logo gets a dark tile, all others get a
+  warm cream tile.
+- **Feathered legend gradient**: replaced the rectangular gradient with a
+  radial gradient + radial mask so the corner softens away in every
+  direction.
+- **Date picker**: small "Pick a date" input above the stage; maps any
+  date in the 07/06 – 08/28 window to the right step. Out-of-window dates
+  clamp to existing (before) or complete (after).
+- **Reference button repositioned** above the stage (between header and
+  photo) per the new request.
+- **Background watermark**: subtle Oak Brook street map fixed behind the
+  page, edges softly masked via radial gradient.
+- **Today's status chip** (auto-detect): shows "Project begins in N days"
+  before the start, the current phase name during the project, or
+  "Project complete" after.
+- **Hard mobile optimization**: dedicated breakpoints at 820px, 640px,
+  560px, and 380px. Date picker and reference button stack and stretch
+  full-width on phones. Scrubber labels hide; dot row remains tappable.
+  Touch-friendly tweaks on coarse pointers (bigger thumb, bigger
+  buttons). Partner tiles shrink for mobile.
 
-- Gate accepts `501` and stores access for the session.
-- Gate rejects wrong codes with an inline error message + shake animation.
-- Real-user (non-forced) clicks on each tick navigate to that step.
-- Lightbox opens / closes via button, close X, and Escape key.
-- All overlay assets return HTTP 200 and render correctly per step.
-- Responsive layout holds on desktop, tablet, and mobile widths.
+## Architecture
 
-## Backlog / Next
+| Concern        | Choice                                                    |
+| -------------- | --------------------------------------------------------- |
+| Hosting target | Vercel (static)                                           |
+| Stack          | Pure HTML, CSS, vanilla JS (no React, no build)           |
+| Serving        | `serve` for local preview only                            |
+| Backend        | Stubbed `/api/health` only — site is purely static        |
+| Auth           | Session-only access gate · code = street number ("501")   |
+| Fonts          | Inter (300 / 400 / 500 / 600 / 700)                       |
 
-### P0 — Waiting on user
-- Upload partner logos to `assets/partners/` and update the `PARTNERS`
-  array in `app.js`. Until then, the section shows a developer placeholder.
+## File Map
+
+```
+/app/frontend/
+├── index.html       # DOM + content (all sections)
+├── styles.css       # Warm RH palette + heavy mobile breakpoints
+├── app.js           # Gate, scrubber, date map, marquee, lightbox, today chip
+└── assets/
+    ├── brand/
+    │   ├── christ-church-logo.png
+    │   ├── locke-ladder-logo.png
+    │   └── client/christ-church/oak-brook-streets.png  # bg watermark
+    ├── partners/
+    │   ├── imperial-crane.png
+    │   ├── bone-roofing-supply.webp
+    │   ├── prime-scaffold.png
+    │   ├── great-lakes-kwik-space.png
+    │   └── porta-potty-dogs.webp
+    └── timeline-overlays/
+        └── [12 overlay images, 2392×1792]
+```
+
+## Verified This Iteration
+
+- Date picker → step mapping: 07/15 → Scaffolding setup, 08/08 → Steeple
+  complete, 08/22 → Sanctuary 3 active, 09/15 → Complete. All pass.
+- Marquee renders 10 tiles (5 logos × 2 for seamless loop), 38s linear
+  infinite animation.
+- Mobile at 390×844: brand pill compact, sections legible, partners
+  marquee scaling correctly.
+- Gate, lightbox, scrubber, prev/next/play/keyboard all still working
+  after refactor.
+
+## Backlog
 
 ### P1 — Easy adds
-- Replace placeholder copy in the gate if the church wants different
-  wording.
-- Swap in a transparent-background Christ Church logo if the current PNG
-  reads dark on the warm header.
+- Hover/pause the marquee on touch via a "tap to pause" UI hint
+  (currently desktop-only via `:hover`).
+- "Share with the board" mailto button that pre-fills the access code.
+- Print stylesheet for board handouts.
 
 ### P2
-- Add a small date input that maps any date in 07/06 – 08/28 to the
-  matching step.
-- "Print / PDF" affordance for board handouts.
+- Annotated phase map (deferred from the original Claude Opus brief).
+- Animated wipe-reveal between Existing and Complete states.
 
 ### P3
-- Animated wipe-reveal between Existing and Complete states.
-- Annotated phase map (per the older Claude Opus brief, deferred).
+- Multi-language toggle if international congregants need it.
 
-## Next Actions
+## Next Actions for User
 
-1. Drop partner logos into `/app/frontend/assets/partners/` and add entries
-   to `PARTNERS` in `app.js`. Site instantly renders them in the grid.
-2. Deploy `/app/frontend/` to Vercel (or download just `index.html`,
-   `styles.css`, `app.js`, and the `assets/` folder).
+1. Save the four source files plus `assets/` to GitHub.
+2. Connect the repo to Vercel — framework preset "Other", no build
+   command. Done.

@@ -1,13 +1,12 @@
 /* =========================================================================
    Christ Church Oak Brook · Roof Restoration
-   Static, board-facing timeline. Vanilla JS.
    ========================================================================= */
 
 (function () {
   "use strict";
 
   /* -----------------------------------------------------------------------
-     Access gate
+     Gate
      ----------------------------------------------------------------------- */
   var ACCESS_CODE = "501";
   var SESSION_KEY = "ccob.boardAccess";
@@ -27,7 +26,6 @@
 
     var already = false;
     try { already = sessionStorage.getItem(SESSION_KEY) === "true"; } catch (_) {}
-
     if (already) { unlock(); return; }
 
     setTimeout(function () { input.focus(); }, 50);
@@ -48,15 +46,17 @@
   }
 
   /* -----------------------------------------------------------------------
-     Timeline steps
+     Steps + date range
+     Each step has an optional `range` (inclusive ISO start/end) used to
+     map a calendar date to the right step.
      ----------------------------------------------------------------------- */
   var STEPS = [
     {
       id: 1,
       label: "Existing view",
       dates: "Today",
-      visible: [],
-      completed: [],
+      range: null,
+      visible: [], completed: [],
       summary: "The roof today. No work has started.",
       items: ["Nothing on site."]
     },
@@ -64,46 +64,36 @@
       id: 2,
       label: "Scaffolding setup",
       dates: "07/06/2026 \u2013 07/31/2026",
-      visible: ["scaffolding"],
-      completed: [],
+      range: { start: "2026-07-06", end: "2026-07-31" },
+      visible: ["scaffolding"], completed: [],
       summary: "Scaffolding is built around the steeple and the sanctuary. No roof work yet.",
-      items: [
-        "Scaffolding around steeple and sanctuary.",
-        "No tear-off."
-      ]
+      items: ["Scaffolding around steeple and sanctuary.", "No tear-off."]
     },
     {
       id: 3,
       label: "Steeple work",
       dates: "08/03/2026 \u2013 08/07/2026",
-      visible: ["scaffolding", "crane", "dumpster", "steeple"],
-      completed: [],
+      range: { start: "2026-08-03", end: "2026-08-07" },
+      visible: ["scaffolding", "crane", "dumpster", "steeple"], completed: [],
       summary:
         "Cedar comes off the steeple. New Brava cedar goes on. Old material drops into the dumpster through a chute.",
-      items: [
-        "Crane on site.",
-        "Dumpster active.",
-        "Steeple cedar being replaced."
-      ]
+      items: ["Crane on site.", "Dumpster active.", "Steeple cedar being replaced."]
     },
     {
       id: 4,
       label: "Steeple complete",
       dates: "On steeple completion",
-      visible: ["scaffolding", "dumpster", "steeple"],
-      completed: ["steeple"],
+      range: { start: "2026-08-08", end: "2026-08-09" },
+      visible: ["scaffolding", "dumpster", "steeple"], completed: ["steeple"],
       summary:
         "Steeple is finished. Crane leaves. Sanctuary scaffolding stays up. Dumpster stays for sanctuary work.",
-      items: [
-        "Crane removed.",
-        "Steeple complete.",
-        "Sanctuary scaffolding stays up."
-      ]
+      items: ["Crane removed.", "Steeple complete.", "Sanctuary scaffolding stays up."]
     },
     {
       id: 5,
       label: "Sanctuary 1 active",
       dates: "08/10/2026 \u2013 08/28/2026",
+      range: { start: "2026-08-10", end: "2026-08-14" },
       visible: ["scaffolding", "dumpster", "materials-path", "steeple", "sanctuary-01"],
       completed: ["steeple"],
       summary:
@@ -118,6 +108,7 @@
       id: 6,
       label: "Sanctuary 2 active",
       dates: "08/10/2026 \u2013 08/28/2026",
+      range: { start: "2026-08-15", end: "2026-08-19" },
       visible: [
         "scaffolding", "dumpster", "materials-path", "steeple",
         "sanctuary-01", "sanctuary-02"
@@ -130,6 +121,7 @@
       id: 7,
       label: "Sanctuary 3 active",
       dates: "08/10/2026 \u2013 08/28/2026",
+      range: { start: "2026-08-20", end: "2026-08-24" },
       visible: [
         "scaffolding", "dumpster", "materials-path", "steeple",
         "sanctuary-01", "sanctuary-02", "sanctuary-03"
@@ -142,6 +134,7 @@
       id: 8,
       label: "Sanctuary 4 active",
       dates: "08/10/2026 \u2013 08/28/2026",
+      range: { start: "2026-08-25", end: "2026-08-28" },
       visible: [
         "scaffolding", "dumpster", "materials-path", "steeple",
         "sanctuary-01", "sanctuary-02", "sanctuary-03", "sanctuary-04"
@@ -154,8 +147,8 @@
       id: 9,
       label: "Complete",
       dates: "After Phase 2",
-      visible: ["after"],
-      completed: [],
+      range: null,
+      visible: ["after"], completed: [],
       summary: "All sections finished. Scaffolding, dumpster, and material paths removed.",
       items: [
         "New Brava cedar on steeple and sanctuary.",
@@ -168,20 +161,22 @@
   var COLOR_ACTIVE = "#C8651E";
   var COLOR_COMPLETE = "#3F7A50";
 
-  /* -----------------------------------------------------------------------
-     Partners
-     ---
-     To add a partner: drop the logo file into assets/partners/, then add
-     a new entry below with `src` and `name`. SVG and PNG both work.
-     ----------------------------------------------------------------------- */
-  var PARTNERS = [
-    // Example:
-    // { src: "assets/partners/example.png", name: "Example Partner" },
-  ];
+  var PROJECT_START = "2026-07-06";
+  var PROJECT_END = "2026-08-28";
 
   /* -----------------------------------------------------------------------
-     Reference (lightbox)
+     Partners — drop new logos into assets/partners/ and add an entry here.
+     `isOriginalLight: true` skips the brightness-invert filter for logos
+     that are already white-on-transparent (e.g. Bone Roofing Supply).
      ----------------------------------------------------------------------- */
+  var PARTNERS = [
+    { src: "assets/partners/imperial-crane.png", name: "Imperial Crane" },
+    { src: "assets/partners/bone-roofing-supply.webp", name: "Bone Roofing Supply", isOriginalLight: true },
+    { src: "assets/partners/prime-scaffold.png", name: "Prime Scaffold" },
+    { src: "assets/partners/great-lakes-kwik-space.png", name: "Great Lakes Kwik Space" },
+    { src: "assets/partners/porta-potty-dogs.webp", name: "Porta Potty Dogs" }
+  ];
+
   var REFERENCE = {
     src: "assets/timeline-overlays/site-vibe-reference-gemini.png",
     caption:
@@ -197,6 +192,8 @@
   var nowStepName, detailTitle, detailDates, detailSummary, detailList;
   var input, progress, ticksEl;
   var prevBtn, nextBtn, playBtn, playIcon;
+  var dateForm, dateInput;
+  var todayChip, todayLabel;
   var LAYERS = {};
 
   var currentIndex = 0;
@@ -219,6 +216,10 @@
     nextBtn = $("ctrl-next");
     playBtn = $("ctrl-play");
     playIcon = $("ctrl-play-icon");
+    dateForm = $("date-jump");
+    dateInput = $("date-jump-input");
+    todayChip = $("today-chip");
+    todayLabel = $("today-label");
 
     LAYERS = {
       scaffolding: $("layer-scaffolding"),
@@ -232,6 +233,56 @@
       "sanctuary-04": $("layer-sanctuary-04"),
       after: $("layer-after")
     };
+  }
+
+  /* -----------------------------------------------------------------------
+     Date helpers
+     ----------------------------------------------------------------------- */
+  function isoToDay(iso) {
+    // returns ms timestamp at noon UTC to avoid DST edge cases
+    if (!iso) return NaN;
+    var parts = iso.split("-");
+    if (parts.length !== 3) return NaN;
+    var y = parseInt(parts[0], 10);
+    var m = parseInt(parts[1], 10);
+    var d = parseInt(parts[2], 10);
+    return Date.UTC(y, m - 1, d, 12, 0, 0);
+  }
+
+  function dateToStepIndex(iso) {
+    var t = isoToDay(iso);
+    if (isNaN(t)) return -1;
+    var start = isoToDay(PROJECT_START);
+    var end = isoToDay(PROJECT_END);
+    if (t < start) return 0;
+    if (t > end) return 8;
+    for (var i = 0; i < STEPS.length; i++) {
+      var r = STEPS[i].range;
+      if (r && t >= isoToDay(r.start) && t <= isoToDay(r.end)) return i;
+    }
+    // Date is inside project window but outside any explicit range
+    // (e.g. 08/01 - 08/02 between scaffold setup and steeple work).
+    // Pick the most recent past step.
+    var pick = 0;
+    for (var j = 0; j < STEPS.length; j++) {
+      var r2 = STEPS[j].range;
+      if (r2 && t >= isoToDay(r2.start)) pick = j;
+    }
+    return pick;
+  }
+
+  function todayIso() {
+    var d = new Date();
+    var y = d.getFullYear();
+    var m = String(d.getMonth() + 1).padStart(2, "0");
+    var day = String(d.getDate()).padStart(2, "0");
+    return y + "-" + m + "-" + day;
+  }
+
+  function daysBetween(isoA, isoB) {
+    var a = isoToDay(isoA), b = isoToDay(isoB);
+    if (isNaN(a) || isNaN(b)) return 0;
+    return Math.round((b - a) / 86400000);
   }
 
   /* -----------------------------------------------------------------------
@@ -366,27 +417,27 @@
   }
 
   /* -----------------------------------------------------------------------
-     Partners
+     Partner marquee — duplicate the set so the keyframe animation loops
+     seamlessly (translateX -50%).
      ----------------------------------------------------------------------- */
-  function buildPartners() {
-    var grid = $("partners-grid");
-    var empty = $("partners-empty");
+  function buildMarquee() {
+    var track = $("marquee-track");
+    if (!track) return;
     if (!PARTNERS.length) {
-      empty.hidden = false;
-      grid.innerHTML = "";
+      track.innerHTML = "";
       return;
     }
-    empty.hidden = true;
-    var html = "";
-    for (var i = 0; i < PARTNERS.length; i++) {
-      var p = PARTNERS[i];
-      html +=
-        '<div class="partner-tile" data-testid="partner-tile">' +
+    function tileHtml(p) {
+      var cls = "partner-tile" + (p.isOriginalLight ? " is-original-light" : "");
+      return (
+        '<div class="' + cls + '" data-testid="partner-tile" title="' + p.name + '">' +
         '<img src="' + p.src + '" alt="' + p.name + '" loading="lazy" />' +
-        (p.name ? '<span class="partner-name">' + p.name + '</span>' : "") +
-        '</div>';
+        '</div>'
+      );
     }
-    grid.innerHTML = html;
+    var one = PARTNERS.map(tileHtml).join("");
+    // Render the set twice for an infinite -50% loop.
+    track.innerHTML = one + one;
   }
 
   /* -----------------------------------------------------------------------
@@ -421,6 +472,63 @@
   }
 
   /* -----------------------------------------------------------------------
+     Date jump
+     ----------------------------------------------------------------------- */
+  function initDateJump() {
+    // Default the input to today (so when a board member opens it the
+    // value is sensible).
+    var today = todayIso();
+    dateInput.value = today;
+
+    function jump() {
+      var iso = dateInput.value;
+      if (!iso) return;
+      var idx = dateToStepIndex(iso);
+      if (idx < 0) return;
+      stopPlay();
+      goTo(idx);
+      // Scroll the stage into view so it's obvious something happened.
+      var stage = document.getElementById("image-stage");
+      if (stage && stage.scrollIntoView) {
+        stage.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    dateForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      jump();
+    });
+    // Allow the date input to immediately jump on change too.
+    dateInput.addEventListener("change", jump);
+  }
+
+  /* -----------------------------------------------------------------------
+     Today's status chip
+     ----------------------------------------------------------------------- */
+  function initTodayChip() {
+    var today = todayIso();
+    var t = isoToDay(today);
+    var start = isoToDay(PROJECT_START);
+    var end = isoToDay(PROJECT_END);
+
+    var text = "";
+    if (t < start) {
+      var d = daysBetween(today, PROJECT_START);
+      if (d > 0) text = "Project begins in " + d + " day" + (d === 1 ? "" : "s");
+    } else if (t > end) {
+      text = "Project complete";
+    } else {
+      var idx = dateToStepIndex(today);
+      if (idx >= 0) text = "Today: " + STEPS[idx].label;
+    }
+
+    if (text) {
+      todayLabel.textContent = text;
+      todayChip.hidden = false;
+    }
+  }
+
+  /* -----------------------------------------------------------------------
      Events
      ----------------------------------------------------------------------- */
   function onInput() {
@@ -450,8 +558,10 @@
     bindDom();
     buildTicks();
     goTo(0);
-    buildPartners();
+    buildMarquee();
     initLightbox();
+    initDateJump();
+    initTodayChip();
     input.addEventListener("input", onInput);
     prevBtn.addEventListener("click", onPrev);
     nextBtn.addEventListener("click", onNext);

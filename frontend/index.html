@@ -24,29 +24,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="locked">
+    <!-- Decorative background watermark — Oak Brook street map -->
+    <div class="bg-streets" aria-hidden="true" data-testid="bg-streets"></div>
+
     <!-- =================================================================
          Access gate — board only.
-         Code is the street number (501). Persists in sessionStorage.
          ================================================================= -->
     <div class="gate" id="gate" data-testid="access-gate">
       <div class="gate-card">
         <div class="gate-brand">
-          <img
-            class="gate-logo gate-logo-cc"
-            src="assets/brand/christ-church-logo.png"
-            alt="Christ Church Oak Brook"
-          />
+          <img class="gate-logo gate-logo-cc"
+               src="assets/brand/christ-church-logo.png"
+               alt="Christ Church Oak Brook" />
           <span class="gate-divider" aria-hidden="true"></span>
-          <img
-            class="gate-logo gate-logo-ll"
-            src="assets/brand/locke-ladder-logo.png"
-            alt="Locke &amp; Ladder"
-          />
+          <img class="gate-logo gate-logo-ll"
+               src="assets/brand/locke-ladder-logo.png"
+               alt="Locke &amp; Ladder" />
         </div>
         <h1 class="gate-title">Board Access</h1>
-        <p class="gate-help">
-          Enter the street number to view the restoration timeline.
-        </p>
+        <p class="gate-help">Enter the street number to view the restoration timeline.</p>
         <form class="gate-form" id="gate-form" autocomplete="off">
           <label class="gate-field" for="gate-input">
             <span class="gate-field-label">Access code</span>
@@ -62,9 +58,7 @@
               required
             />
           </label>
-          <button class="gate-submit" type="submit" data-testid="gate-submit">
-            Enter
-          </button>
+          <button class="gate-submit" type="submit" data-testid="gate-submit">Enter</button>
           <p class="gate-error" id="gate-error" role="alert" aria-live="polite"></p>
         </form>
         <p class="gate-footnote">For board members and project staff only.</p>
@@ -76,43 +70,78 @@
          ================================================================= -->
     <aside class="brand-fixed" aria-label="Project sponsors" data-testid="brand-fixed">
       <a class="brand-link" href="#stage">
-        <img
-          class="brand-img brand-img-cc"
-          src="assets/brand/christ-church-logo.png"
-          alt="Christ Church Oak Brook"
-        />
+        <img class="brand-img brand-img-cc"
+             src="assets/brand/christ-church-logo.png"
+             alt="Christ Church Oak Brook" />
       </a>
       <span class="brand-divider" aria-hidden="true"></span>
       <a class="brand-link" href="#stage">
-        <img
-          class="brand-img brand-img-ll"
-          src="assets/brand/locke-ladder-logo.png"
-          alt="Locke &amp; Ladder"
-        />
+        <img class="brand-img brand-img-ll"
+             src="assets/brand/locke-ladder-logo.png"
+             alt="Locke &amp; Ladder" />
       </a>
     </aside>
 
-    <!-- =================================================================
-         Main content
-         ================================================================= -->
     <main class="main">
       <div class="container">
+
+        <!-- =================================================================
+             Page header
+             ================================================================= -->
         <header class="page-head" id="stage">
           <span class="page-eyebrow">Roof Restoration · Christ Church Oak Brook</span>
           <h1 class="page-title">Project Timeline</h1>
           <p class="page-sub">
-            July 6 — August 28, 2026. Drag the timeline to see what is on site on any
-            given day.
+            July 6 — August 28, 2026. Drag the timeline, click a step, or pick a date
+            to see what will be on site that day.
           </p>
+          <div class="today-chip" id="today-chip" data-testid="today-chip" hidden>
+            <span class="today-dot" aria-hidden="true"></span>
+            <span class="today-label" id="today-label"></span>
+          </div>
         </header>
 
+        <!-- =================================================================
+             Reference button + date picker — above the stage
+             ================================================================= -->
+        <div class="meta-row">
+          <button class="reference-btn" id="reference-btn" data-testid="reference-btn" type="button">
+            <span class="reference-eyebrow">Reference</span>
+            <span class="reference-label">View early concept rendering</span>
+            <span class="reference-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+
+          <form class="date-jump" id="date-jump" data-testid="date-jump">
+            <label class="date-jump-label" for="date-jump-input">
+              <span class="date-jump-eyebrow">Pick a date</span>
+              <input
+                type="date"
+                id="date-jump-input"
+                class="date-jump-input"
+                min="2026-07-06"
+                max="2026-08-28"
+                data-testid="date-jump-input"
+              />
+            </label>
+            <button class="date-jump-btn" type="submit" data-testid="date-jump-btn">
+              Show me
+            </button>
+          </form>
+        </div>
+
+        <!-- =================================================================
+             Stage
+             ================================================================= -->
         <section class="stage-wrap" aria-label="Project stage">
           <div class="stage" id="image-stage" data-testid="image-stage">
-            <img
-              class="layer base-layer"
-              src="assets/timeline-overlays/base-existing-2392x1792.jpg"
-              alt="Aerial view of Christ Church Oak Brook."
-            />
+            <img class="layer base-layer"
+                 src="assets/timeline-overlays/base-existing-2392x1792.jpg"
+                 alt="Aerial view of Christ Church Oak Brook." />
 
             <img class="layer photo-layer" id="layer-scaffolding"
                  src="assets/timeline-overlays/scaffolding-overlay.png" alt="" aria-hidden="true" />
@@ -131,14 +160,13 @@
             <img class="layer photo-layer" id="layer-after"
                  src="assets/timeline-overlays/after-roof-only-overlay.png" alt="" aria-hidden="true" />
 
-            <!-- Step caption (top-left, inside image) -->
             <div class="stage-caption" id="stage-caption" data-testid="stage-caption">
               <span class="caption-step" id="caption-step">Step 1 of 9</span>
               <span class="caption-title" id="caption-title">Existing view</span>
               <span class="caption-dates" id="caption-dates">Today</span>
             </div>
 
-            <!-- Color key (bottom-right, inside image, sitting over a gradient) -->
+            <div class="stage-legend-gradient" aria-hidden="true"></div>
             <div class="stage-legend" data-testid="stage-legend">
               <span class="legend-eyebrow">Color key</span>
               <ul class="legend-list">
@@ -160,10 +188,12 @@
                 </li>
               </ul>
             </div>
-            <div class="stage-legend-gradient" aria-hidden="true"></div>
           </div>
         </section>
 
+        <!-- =================================================================
+             Scrubber
+             ================================================================= -->
         <section class="scrubber-wrap" aria-label="Timeline">
           <div class="scrubber-head">
             <div class="scrubber-now">
@@ -171,17 +201,17 @@
               <span class="now-value" id="now-step-name" data-testid="now-step-name">Existing view</span>
             </div>
             <div class="scrubber-controls">
-              <button class="ctrl" id="ctrl-prev" data-testid="ctrl-prev" aria-label="Previous step">
+              <button class="ctrl" id="ctrl-prev" data-testid="ctrl-prev" aria-label="Previous step" type="button">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
                   <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
-              <button class="ctrl ctrl-play" id="ctrl-play" data-testid="ctrl-play" aria-label="Play timeline">
+              <button class="ctrl ctrl-play" id="ctrl-play" data-testid="ctrl-play" aria-label="Play timeline" type="button">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" id="ctrl-play-icon">
                   <path d="M8 5l11 7-11 7V5z" fill="currentColor"/>
                 </svg>
               </button>
-              <button class="ctrl" id="ctrl-next" data-testid="ctrl-next" aria-label="Next step">
+              <button class="ctrl" id="ctrl-next" data-testid="ctrl-next" aria-label="Next step" type="button">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
                   <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -194,22 +224,17 @@
               <div class="scrubber-track">
                 <div class="scrubber-progress" id="scrubber-progress"></div>
               </div>
-              <input
-                class="scrubber-input"
-                id="scrubber-input"
-                type="range"
-                min="0"
-                max="8"
-                step="1"
-                value="0"
-                aria-label="Project timeline step"
-                data-testid="scrubber-input"
-              />
+              <input class="scrubber-input" id="scrubber-input" type="range"
+                     min="0" max="8" step="1" value="0"
+                     aria-label="Project timeline step" data-testid="scrubber-input" />
             </div>
             <ol class="scrubber-ticks" id="scrubber-ticks"></ol>
           </div>
         </section>
 
+        <!-- =================================================================
+             Current step detail
+             ================================================================= -->
         <section class="detail-wrap" aria-label="Current step detail">
           <article class="detail-card" data-testid="current-detail">
             <header class="detail-head">
@@ -224,19 +249,17 @@
         </section>
 
         <!-- =================================================================
-             Partners (logos populated from PARTNERS list in app.js)
+             Partner marquee
              ================================================================= -->
         <section class="partners-wrap" aria-label="Project partners" data-testid="partners">
           <header class="section-head">
             <span class="section-eyebrow">Partners</span>
             <h2 class="section-title">Project Team</h2>
+            <p class="section-sub">Trusted partners volunteering material, equipment, and labor.</p>
           </header>
-          <div class="partners-grid" id="partners-grid"></div>
-          <p class="partners-empty" id="partners-empty" hidden>
-            Drop partner logos into
-            <code>assets/partners/</code>
-            and list them in the <code>PARTNERS</code> array in <code>app.js</code>.
-          </p>
+          <div class="marquee" data-testid="partners-marquee">
+            <div class="marquee-track" id="marquee-track"></div>
+          </div>
         </section>
 
         <!-- =================================================================
@@ -280,26 +303,7 @@
         </section>
 
         <!-- =================================================================
-             Design reference (modal — not immediately visible)
-             ================================================================= -->
-        <section class="reference-wrap" aria-label="Design reference">
-          <button class="reference-btn" id="reference-btn" data-testid="reference-btn">
-            <span class="reference-eyebrow">Reference</span>
-            <span class="reference-label">View early concept rendering</span>
-            <span class="reference-arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="14" height="14">
-                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-          </button>
-          <p class="reference-note">
-            Illustrative only. Not used for placement, scaffolding logic, or roof
-            geometry.
-          </p>
-        </section>
-
-        <!-- =================================================================
-             Total Investment — at the bottom, factual, single all-in number.
+             Total Investment
              ================================================================= -->
         <section class="investment-wrap" aria-label="Total investment" data-testid="investment">
           <div class="investment-card">
@@ -321,21 +325,15 @@
       </div>
     </footer>
 
-    <!-- =================================================================
-         Reference lightbox
-         ================================================================= -->
+    <!-- Lightbox -->
     <div class="lightbox" id="lightbox" data-testid="lightbox" hidden>
-      <button class="lightbox-close" id="lightbox-close" aria-label="Close" data-testid="lightbox-close">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close" data-testid="lightbox-close" type="button">
         <svg viewBox="0 0 24 24" width="18" height="18">
           <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
       </button>
       <figure class="lightbox-figure">
-        <img
-          class="lightbox-img"
-          id="lightbox-img"
-          alt="Early concept rendering"
-        />
+        <img class="lightbox-img" id="lightbox-img" alt="Early concept rendering" />
         <figcaption class="lightbox-caption" id="lightbox-caption"></figcaption>
       </figure>
     </div>
