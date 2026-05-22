@@ -1,0 +1,13 @@
+{
+  "name": "christ-church-timeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Christ Church Oak Brook roof restoration project — interactive timeline visualization.",
+  "scripts": {
+    "start": "serve -s . -l tcp://0.0.0.0:3000 --no-clipboard",
+    "build": "echo 'Static site — copy index.html and assets/ folder to your host (Vercel, etc.).' && exit 0"
+  },
+  "dependencies": {
+    "serve": "14.2.4"
+  }
+}

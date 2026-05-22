@@ -1,0 +1,42 @@
+{
+  "summary": "Frontend-only verification of Christ Church Oak Brook static timeline scrubber. 9 steps render correct layer visibility + mask recoloring on every step (steeple orange->green, sanctuary 1-4 active->green per step). All 11 overlay/base assets return HTTP 200. Scrubber input, prev/next bounds, play/pause, and detail-card updates work. ONE CRITICAL UI BUG: timeline tick <li> elements (data-testid=tick-1..tick-9) are NOT clickable for a real user because the absolutely-positioned <input type=range class=scrubber-input> (z-index:3, full width/height of .scrubber) overlays the ticks (z-index:2) and intercepts pointer events. Playwright real-user click on tick-3/tick-5 times out with 'scrubber-input intercepts pointer events'. Programmatic (force=true) click works, confirming the JS handler is wired correctly, but end users on the deployed Vercel site cannot click ticks.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "Scrubber ticks",
+        "issue": "<ol class='scrubber-ticks'> li.tick items are visually under the <input.scrubber-input> range slider (input has position:absolute, z-index:3; ticks have z-index:2). Real-user clicks on data-testid=tick-1..tick-9 are intercepted by the slider input and never fire the tick onclick handler. The tick UI looks clickable (cursor:pointer, hover styles) but does nothing.",
+        "selector": "[data-testid='tick-1'] through [data-testid='tick-9']",
+        "priority": "HIGH"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {
+        "screen": "Scrubber row",
+        "issues": [
+          "Tick labels wrap to a second line (e.g. 'Scaffolding setup', 'Steeple complete', 'Sanctuary 1 active') and overlap the next row of cards because the ticks ol has no reserved bottom space. The wrapped label gets cropped/overlapped on the screenshot."
+        ]
+      }
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Fix tick clickability: either add `pointer-events: auto; position: relative; z-index: 4;` to `.tick` in styles.css, or restructure so the <input.scrubber-input> only overlays the track region (not the ticks row below it). Quickest fix: in styles.css give `.scrubber-ticks .tick { pointer-events: auto; position: relative; z-index: 4; }` so individual ticks sit above the input even though parent .scrubber-ticks has pointer-events:none.",
+    "Reserve vertical space under the ticks (add margin-bottom or min-height on .scrubber-wrap / .scrubber-ticks) so two-line tick labels don't visually collide with the detail-grid below."
+  ],
+  "critical_code_review_comments": [
+    "z-index stacking bug in styles.css: .scrubber-input (z:3) overlays .scrubber-ticks (z:2) full-area, so ticks are decorative-only despite having click handlers in app.js (lines 257-266). Real users cannot use ticks as nav.",
+    "All 9 STEPS in app.js correctly drive visibility/completed/active arrays - logic verified end-to-end via JS state inspection.",
+    "Keyboard handler in app.js (onKey, line 417) correctly defers Space to input focus; ArrowLeft/Right always intercept which is fine since the range input's native arrow behavior would still increment by step=1.",
+    "All overlay PNGs and the base JPG load (200). No console errors, no page errors."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (no backend in scope)", "frontend": "93% (14 of 15 spec checks pass; tick-click interaction broken)"},
+  "test_credentials": "N/A",
+  "seed_data_creation": "None",
+  "retest_needed": true,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Static site served from /app/frontend via `serve`. Public URL works. Step visibility and mask coloring all match spec exactly (verified RGB values). The only failing requirement from the request is 'Tick clicks jump to that step' - it ONLY works under JS-dispatched/force clicks; the range input physically covers ticks. After fix, re-run a Playwright click (no force) on each [data-testid=tick-N] and assert now-step-name updates. Other interactions verified: scrubber value change, ctrl-prev/next with bounds clamping at 0/8, ctrl-play auto-advance (~1.8s per step) and pause, detail-card title/dates/summary/items update, base image renders on step 1, after-overlay renders on step 9.",
+  "rca of the issue": "Reproduction: open public URL, click any of the tick numbers/dots/labels below the slider track. Nothing happens. Root cause: in styles.css, .scrubber-input is `position:absolute` covering the full .scrubber bounds with z-index:3 (so the native range thumb is draggable across the whole row). The .scrubber-ticks ol below has z-index:2 and the parent has pointer-events:none, but the individual .tick children do not opt back in with pointer-events:auto AND a higher z-index than the input. Result: elementFromPoint over a tick resolves to the input, so the click handler attached in app.js buildTicks() never fires. Mitigation: add `.scrubber-ticks .tick { pointer-events: auto; position: relative; z-index: 4; }` (and ensure the tick's visible target area is not also obstructed). Alternative: shrink the input's clickable region to just the track height using `clip-path` or position the ticks above the input instead of below."
+}
