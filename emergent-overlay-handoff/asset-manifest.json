@@ -22,6 +22,11 @@
     "afterFullReference": "assets/timeline-overlays/after-full-reference.jpg",
     "siteVibeGeminiReference": "assets/timeline-overlays/site-vibe-reference-gemini.png"
   },
+  "sanctuaryOverlayColor": {
+    "rgb": "0, 102, 255",
+    "hex": "#0066FF",
+    "note": "The sanctuary 01-04 PNG files are solid blue masks with transparent backgrounds."
+  },
   "stageOrder": [
     {
       "step": 1,

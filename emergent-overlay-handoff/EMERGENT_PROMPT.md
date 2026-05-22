@@ -4,6 +4,8 @@ Build a standalone micro webpage for Christ Church Oak Brook that explains the r
 
 Use the assets in `assets/timeline-overlays/`. The base image and all overlays share the exact same canvas: 2392 x 1792. Stack every overlay directly over the base image with identical sizing and origin. Do not crop, reposition, or manually redraw the roof areas.
 
+The four sanctuary overlays are solid blue PNG masks in the exact shape of each roof section. They are no longer empty transparent placeholders. Use those blue masks for the section geometry.
+
 Style direction: warm off-whites, quiet Restoration Hardware feel, Inter font, plain layperson language. This should not feel like a tech dashboard. No hype. No marketing hero. No hover interactions. No neon outlines. No glows.
 
 Core interaction:

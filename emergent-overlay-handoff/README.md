@@ -40,6 +40,8 @@ Recommended CSS behavior:
 
 These are the four sanctuary roof sections exported one at a time as transparent full-canvas PNG overlays.
 
+They are intentionally solid blue masks. Use them directly as visible overlays, or recolor/tint them in code for active/completed states.
+
 ## Implementation Notes
 
 - Use a timeline scrubber or slider, not hover.
