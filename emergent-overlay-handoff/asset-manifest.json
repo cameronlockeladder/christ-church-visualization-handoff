@@ -22,6 +22,50 @@
     "afterFullReference": "assets/timeline-overlays/after-full-reference.jpg",
     "siteVibeGeminiReference": "assets/timeline-overlays/site-vibe-reference-gemini.png"
   },
+  "partnerLogos": {
+    "imperialCrane": {
+      "name": "Imperial Crane Services, Inc.",
+      "creditLine": "Crane and forklift provided by Imperial Crane and BJ Bohne, a member of the church.",
+      "asset": "assets/partner-logos/imperial-crane.png",
+      "format": "png",
+      "sourcePage": "https://imperialcrane.com/",
+      "sourceImage": "https://imperialcrane.com/wp-content/uploads/2023/05/imperial-crane-green-logo.png"
+    },
+    "boneRoofingSupply": {
+      "name": "Bone Roofing Supply, Inc.",
+      "creditLine": "All material provided by Bone Roofing Supply, long-standing members of the church.",
+      "asset": "assets/partner-logos/bone-roofing-supply.webp",
+      "format": "webp",
+      "sourcePage": "https://www.boneroofingsupply.com/",
+      "sourceImage": "https://images.squarespace-cdn.com/content/v1/5cfe7c8a3e2bf400014d769f/1565030773859-A0NT2A9983FTNSU5MUX2/Artboard+1+copy+2Bone+%281%29.png?format=1500w",
+      "note": "Official logo is white on transparency; place on a dark or medium neutral background for legibility."
+    },
+    "primeScaffold": {
+      "name": "Prime Scaffold, Incorporated",
+      "creditLine": "Prime Scaffold is providing all scaffolding equipment and crews.",
+      "asset": "assets/partner-logos/prime-scaffold.png",
+      "format": "png",
+      "sourcePage": "https://primescaffold.com/",
+      "sourceImage": "https://primescaffold.com/images/Prime_Logo_Web.jpg",
+      "note": "Official source file was JPG; converted to PNG for this handoff."
+    },
+    "greatLakesKwikSpace": {
+      "name": "Great Lakes Kwik Space",
+      "creditLine": "Great Lakes Kwik Space is providing the storage container for material staging.",
+      "asset": "assets/partner-logos/great-lakes-kwik-space.png",
+      "format": "png",
+      "sourcePage": "https://storagecontainers.com/",
+      "sourceImage": "https://storagecontainers.com/wp-content/themes/storage-theme/images/logo.png"
+    },
+    "portaPottyDogs": {
+      "name": "Porta Potty Dogs",
+      "creditLine": "Porta Potty Dogs is providing the porta potty.",
+      "asset": "assets/partner-logos/porta-potty-dogs.webp",
+      "format": "webp",
+      "sourcePage": "https://www.portapottydogs.com/",
+      "sourceImage": "https://www.portapottydogs.com/assets/PPD-logo.webp"
+    }
+  },
   "sanctuaryOverlayColor": {
     "rgb": "0, 102, 255",
     "hex": "#0066FF",

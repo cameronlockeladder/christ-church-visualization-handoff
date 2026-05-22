@@ -4,6 +4,8 @@ This folder is the clean handoff for rebuilding the timeline page in Emergent.
 
 Do not use the earlier HTML prototype as the source of truth. The important part is the exported image stack in `assets/timeline-overlays/` and the schedule notes in `notes/project-sequence.md`.
 
+Partner acknowledgement logos are in `assets/partner-logos/`. Their source URLs and suggested credit copy are documented in `assets/partner-logos/README.md` and `notes/partner-credits.md`.
+
 ## Asset Rule
 
 Every image in `assets/timeline-overlays/` is exported at the same canvas size:

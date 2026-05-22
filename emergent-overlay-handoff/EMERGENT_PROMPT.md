@@ -81,6 +81,14 @@ Required copy points:
 - Plywood is removed during service times and is not permanently fixed to the wall.
 - Stained glass remains functional for Sunday and any additional services.
 
+Partner acknowledgement assets:
+
+- Use partner logos from `assets/partner-logos/`.
+- Use source/copy details from `notes/partner-credits.md` and `asset-manifest.json`.
+- Keep this section plain and factual, not promotional.
+- Use the Imperial Crane logo for the Imperial Crane / BJ Bohne line. BJ Bohne is an individual, not a separate logo asset.
+- Bone Roofing Supply's official logo is white on transparency; place it on a darker warm neutral tile or band.
+
 Do not invent a contract price. Leave price as a placeholder unless a final number is provided.
 
 Reference caution:
