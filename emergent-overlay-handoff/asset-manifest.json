@@ -1,0 +1,82 @@
+{
+  "canvas": {
+    "width": 2392,
+    "height": 1792,
+    "aspectRatio": "2392 / 1792",
+    "placement": "All overlays align to the base image at top-left origin and full canvas size."
+  },
+  "base": "assets/timeline-overlays/base-existing-2392x1792.jpg",
+  "primaryOverlays": {
+    "sanctuary01": "assets/timeline-overlays/sanctuary-01-overlay.png",
+    "sanctuary02": "assets/timeline-overlays/sanctuary-02-overlay.png",
+    "sanctuary03": "assets/timeline-overlays/sanctuary-03-overlay.png",
+    "sanctuary04": "assets/timeline-overlays/sanctuary-04-overlay.png",
+    "steeple": "assets/timeline-overlays/steeple-overlay.png",
+    "scaffolding": "assets/timeline-overlays/scaffolding-overlay.png",
+    "crane": "assets/timeline-overlays/crane-overlay.png",
+    "dumpster": "assets/timeline-overlays/dumpster-overlay.png",
+    "materialsPath": "assets/timeline-overlays/materials-path-overlay.png",
+    "afterRoofOnly": "assets/timeline-overlays/after-roof-only-overlay.png"
+  },
+  "references": {
+    "afterFullReference": "assets/timeline-overlays/after-full-reference.jpg",
+    "siteVibeGeminiReference": "assets/timeline-overlays/site-vibe-reference-gemini.png"
+  },
+  "stageOrder": [
+    {
+      "step": 1,
+      "label": "Existing view",
+      "visible": []
+    },
+    {
+      "step": 2,
+      "label": "Scaffolding setup",
+      "visible": ["scaffolding"]
+    },
+    {
+      "step": 3,
+      "label": "Steeple work",
+      "visible": ["scaffolding", "crane", "dumpster", "steeple"]
+    },
+    {
+      "step": 4,
+      "label": "Steeple complete",
+      "visible": ["scaffolding", "dumpster", "steeple"],
+      "completed": ["steeple"]
+    },
+    {
+      "step": 5,
+      "label": "Sanctuary 1 active",
+      "visible": ["scaffolding", "dumpster", "materialsPath", "steeple", "sanctuary01"],
+      "completed": ["steeple"],
+      "active": ["sanctuary01"]
+    },
+    {
+      "step": 6,
+      "label": "Sanctuary 2 active",
+      "visible": ["scaffolding", "dumpster", "materialsPath", "steeple", "sanctuary01", "sanctuary02"],
+      "completed": ["steeple", "sanctuary01"],
+      "active": ["sanctuary02"]
+    },
+    {
+      "step": 7,
+      "label": "Sanctuary 3 active",
+      "visible": ["scaffolding", "dumpster", "materialsPath", "steeple", "sanctuary01", "sanctuary02", "sanctuary03"],
+      "completed": ["steeple", "sanctuary01", "sanctuary02"],
+      "active": ["sanctuary03"]
+    },
+    {
+      "step": 8,
+      "label": "Sanctuary 4 active",
+      "visible": ["scaffolding", "dumpster", "materialsPath", "steeple", "sanctuary01", "sanctuary02", "sanctuary03", "sanctuary04"],
+      "completed": ["steeple", "sanctuary01", "sanctuary02", "sanctuary03"],
+      "active": ["sanctuary04"]
+    },
+    {
+      "step": 9,
+      "label": "Complete",
+      "visible": ["afterRoofOnly"],
+      "completed": ["steeple", "sanctuary01", "sanctuary02", "sanctuary03", "sanctuary04"]
+    }
+  ]
+}
