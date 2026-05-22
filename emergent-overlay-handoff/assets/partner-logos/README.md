@@ -2,6 +2,8 @@
 
 Use these logo files for the partner acknowledgement area. These were pulled from official company websites where available.
 
+The files are normalized for dark partner cards: each logo sits on a transparent `1100 x 650` canvas with enough padding to avoid cropping. Some marks were converted to light/cream for legibility instead of preserving exact brand color.
+
 | Partner | File | Source | Notes |
 | --- | --- | --- | --- |
 | Imperial Crane Services, Inc. | `imperial-crane.png` | `https://imperialcrane.com/wp-content/uploads/2023/05/imperial-crane-green-logo.png` | Use for the Imperial Crane / BJ Bohne credit line. BJ Bohne is an individual, so there is no separate logo asset. |
