@@ -1,259 +1,255 @@
 /* =========================================================================
-   Christ Church Oak Brook · Roof Restoration Timeline
-   Interaction logic for the timeline scrubber and overlay stack.
+   Christ Church Oak Brook · Roof Restoration
+   Static, board-facing timeline. Vanilla JS.
    ========================================================================= */
 
 (function () {
   "use strict";
 
   /* -----------------------------------------------------------------------
-   * Step model
-   *
-   * Each step declares:
-   *   - id, label, dates  -> display copy
-   *   - visible[]         -> layer ids to show
-   *   - completed[]       -> ids that should appear in the completed color
-   *   - active            -> id that should appear in its own active color
-   *   - summary, items    -> right-hand card copy
-   * --------------------------------------------------------------------- */
+     Access gate
+     ----------------------------------------------------------------------- */
+  var ACCESS_CODE = "501";
+  var SESSION_KEY = "ccob.boardAccess";
 
+  function unlock() {
+    document.body.classList.remove("locked");
+    var gate = document.getElementById("gate");
+    gate.classList.add("is-hidden");
+    try { sessionStorage.setItem(SESSION_KEY, "true"); } catch (_) {}
+  }
+
+  function initGate() {
+    var gate = document.getElementById("gate");
+    var input = document.getElementById("gate-input");
+    var error = document.getElementById("gate-error");
+    var form = document.getElementById("gate-form");
+
+    var already = false;
+    try { already = sessionStorage.getItem(SESSION_KEY) === "true"; } catch (_) {}
+
+    if (already) { unlock(); return; }
+
+    setTimeout(function () { input.focus(); }, 50);
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var val = (input.value || "").trim();
+      if (val === ACCESS_CODE) {
+        error.textContent = "";
+        unlock();
+      } else {
+        error.textContent = "That code is not correct. Try again.";
+        gate.classList.add("is-shaking");
+        setTimeout(function () { gate.classList.remove("is-shaking"); }, 380);
+        input.select();
+      }
+    });
+  }
+
+  /* -----------------------------------------------------------------------
+     Timeline steps
+     ----------------------------------------------------------------------- */
   var STEPS = [
     {
       id: 1,
       label: "Existing view",
       dates: "Today",
-      shortDate: "Today",
       visible: [],
       completed: [],
-      active: null,
-      summary:
-        "The roof as it stands today. No scaffolding, no equipment. Use the scrubber to step forward through each phase of the project.",
-      items: [
-        { c: "#6B5E4D", t: "Site untouched. Existing cedar roof on steeple and sanctuary." }
-      ]
+      summary: "The roof today. No work has started.",
+      items: ["Nothing on site."]
     },
     {
       id: 2,
       label: "Scaffolding setup",
       dates: "07/06/2026 \u2013 07/31/2026",
-      shortDate: "Jul 6 \u2013 31",
       visible: ["scaffolding"],
       completed: [],
-      active: null,
-      summary:
-        "Scaffolding is installed around the steeple and sanctuary. This is site preparation before any active roof tear-off begins.",
+      summary: "Scaffolding is built around the steeple and the sanctuary. No roof work yet.",
       items: [
-        { c: "#6B5E4D", t: "Scaffolding installed around steeple and sanctuary." },
-        { c: "#8a8174", t: "No tear-off yet. The existing roof remains in place." }
+        "Scaffolding around steeple and sanctuary.",
+        "No tear-off."
       ]
     },
     {
       id: 3,
       label: "Steeple work",
       dates: "08/03/2026 \u2013 08/07/2026",
-      shortDate: "Aug 3 \u2013 7",
       visible: ["scaffolding", "crane", "dumpster", "steeple"],
       completed: [],
-      active: "steeple",
       summary:
-        "Existing cedar is torn off the steeple and new Brava cedar installation begins. The crane is on site for the week. Debris is dropped through a chute into the dumpster.",
+        "Cedar comes off the steeple. New Brava cedar goes on. Old material drops into the dumpster through a chute.",
       items: [
-        { c: "#AF6D2C", t: "Steeple active \u2014 cedar tear-off and new Brava install." },
-        { c: "#6B5E4D", t: "Crane on site for steeple work (Phase 1 only)." },
-        { c: "#6B5E4D", t: "Dumpster active. Existing roof material is chuted in." },
-        { c: "#6B5E4D", t: "Scaffolding remains around steeple and sanctuary." }
+        "Crane on site.",
+        "Dumpster active.",
+        "Steeple cedar being replaced."
       ]
     },
     {
       id: 4,
       label: "Steeple complete",
-      dates: "Upon completion of steeple",
-      shortDate: "Steeple done",
+      dates: "On steeple completion",
       visible: ["scaffolding", "dumpster", "steeple"],
       completed: ["steeple"],
-      active: null,
       summary:
-        "The steeple is finished and the crane departs. The steeple scaffolding is removed, but sanctuary scaffolding stays in place until the sanctuary roof is also complete. The dumpster remains for the next phase.",
+        "Steeple is finished. Crane leaves. Sanctuary scaffolding stays up. Dumpster stays for sanctuary work.",
       items: [
-        { c: "#3F7A50", t: "Steeple complete." },
-        { c: "#6B5E4D", t: "Crane departs. No more crane on the property." },
-        { c: "#6B5E4D", t: "Sanctuary scaffolding remains. Dumpster remains." }
+        "Crane removed.",
+        "Steeple complete.",
+        "Sanctuary scaffolding stays up."
       ]
     },
     {
       id: 5,
       label: "Sanctuary 1 active",
       dates: "08/10/2026 \u2013 08/28/2026",
-      shortDate: "Aug 10 \u2013 28",
       visible: ["scaffolding", "dumpster", "materials-path", "steeple", "sanctuary-01"],
       completed: ["steeple"],
-      active: "sanctuary-01",
       summary:
-        "Phase 2 begins. Sanctuary section 1 is removed and rebuilt with new Brava cedar and metal drip edge. Roof deck is inspected as work proceeds. Material is moved from the parking lot to the flat roof along the dedicated path.",
+        "First sanctuary section is torn off and rebuilt with new Brava cedar and metal drip edge.",
       items: [
-        { c: "#B56F39", t: "Sanctuary 1 active \u2014 tear-off and new Brava install." },
-        { c: "#3F7A50", t: "Steeple already complete." },
-        { c: "#6B5E4D", t: "Materials path active to the flat roof." },
-        { c: "#6B5E4D", t: "Dumpster remains. Sanctuary scaffolding stays up." }
+        "Sanctuary 1 in progress.",
+        "Material moves from parking lot to flat roof.",
+        "Dumpster remains."
       ]
     },
     {
       id: 6,
       label: "Sanctuary 2 active",
       dates: "08/10/2026 \u2013 08/28/2026",
-      shortDate: "Aug 10 \u2013 28",
       visible: [
-        "scaffolding",
-        "dumpster",
-        "materials-path",
-        "steeple",
-        "sanctuary-01",
-        "sanctuary-02"
+        "scaffolding", "dumpster", "materials-path", "steeple",
+        "sanctuary-01", "sanctuary-02"
       ],
       completed: ["steeple", "sanctuary-01"],
-      active: "sanctuary-02",
-      summary:
-        "Section 1 is finished. Section 2 is now actively being torn off and rebuilt. The crew is moving section by section so the building stays mostly enclosed.",
-      items: [
-        { c: "#8F7B34", t: "Sanctuary 2 active." },
-        { c: "#3F7A50", t: "Steeple and Sanctuary 1 complete." },
-        { c: "#6B5E4D", t: "Material continues to move along the dedicated path." }
-      ]
+      summary: "Section 1 done. Section 2 is being torn off and rebuilt.",
+      items: ["Sanctuary 2 in progress.", "Section 1 complete."]
     },
     {
       id: 7,
       label: "Sanctuary 3 active",
       dates: "08/10/2026 \u2013 08/28/2026",
-      shortDate: "Aug 10 \u2013 28",
       visible: [
-        "scaffolding",
-        "dumpster",
-        "materials-path",
-        "steeple",
-        "sanctuary-01",
-        "sanctuary-02",
-        "sanctuary-03"
+        "scaffolding", "dumpster", "materials-path", "steeple",
+        "sanctuary-01", "sanctuary-02", "sanctuary-03"
       ],
       completed: ["steeple", "sanctuary-01", "sanctuary-02"],
-      active: "sanctuary-03",
-      summary:
-        "Sections 1 and 2 are complete. Section 3 is actively being worked. Stained glass continues to be protected by plywood during working hours and uncovered for any services.",
-      items: [
-        { c: "#4F7478", t: "Sanctuary 3 active." },
-        { c: "#3F7A50", t: "Steeple, Sanctuary 1 and 2 complete." },
-        { c: "#6B5E4D", t: "Roof deck inspected and mitigated as needed." }
-      ]
+      summary: "Sections 1 and 2 done. Section 3 is being torn off and rebuilt.",
+      items: ["Sanctuary 3 in progress.", "Sections 1 and 2 complete."]
     },
     {
       id: 8,
       label: "Sanctuary 4 active",
       dates: "08/10/2026 \u2013 08/28/2026",
-      shortDate: "Aug 10 \u2013 28",
       visible: [
-        "scaffolding",
-        "dumpster",
-        "materials-path",
-        "steeple",
-        "sanctuary-01",
-        "sanctuary-02",
-        "sanctuary-03",
-        "sanctuary-04"
+        "scaffolding", "dumpster", "materials-path", "steeple",
+        "sanctuary-01", "sanctuary-02", "sanctuary-03", "sanctuary-04"
       ],
       completed: ["steeple", "sanctuary-01", "sanctuary-02", "sanctuary-03"],
-      active: "sanctuary-04",
-      summary:
-        "The final sanctuary section is underway. Once Sanctuary 4 is complete, the sanctuary scaffolding can come down and the project enters its final wrap.",
-      items: [
-        { c: "#7A6092", t: "Sanctuary 4 active \u2014 last section." },
-        { c: "#3F7A50", t: "Steeple, Sanctuary 1, 2, and 3 complete." }
-      ]
+      summary: "Sections 1, 2, and 3 done. Section 4 is being torn off and rebuilt.",
+      items: ["Sanctuary 4 in progress.", "Sections 1\u20133 complete."]
     },
     {
       id: 9,
       label: "Complete",
-      dates: "After Phase 2 completion",
-      shortDate: "Complete",
+      dates: "After Phase 2",
       visible: ["after"],
       completed: [],
-      active: null,
-      summary:
-        "All sections are finished. Scaffolding, dumpster, and material paths are removed. The new Brava cedar roof and metal drip edge are in place across the steeple and the full sanctuary.",
+      summary: "All sections finished. Scaffolding, dumpster, and material paths removed.",
       items: [
-        { c: "#3F7A50", t: "New Brava cedar across steeple and sanctuary." },
-        { c: "#3F7A50", t: "All metal drip edge installed." },
-        { c: "#3F7A50", t: "Site cleared. Stained glass back to full visibility." }
+        "New Brava cedar on steeple and sanctuary.",
+        "All metal drip edge installed.",
+        "Site cleared."
       ]
     }
   ];
 
-  var COLORS = {
-    complete: "#3F7A50",
-    equipment: "#6B5E4D",
-    steeple: "#AF6D2C",
-    "sanctuary-01": "#B56F39",
-    "sanctuary-02": "#8F7B34",
-    "sanctuary-03": "#4F7478",
-    "sanctuary-04": "#7A6092"
+  var COLOR_ACTIVE = "#C8651E";
+  var COLOR_COMPLETE = "#3F7A50";
+
+  /* -----------------------------------------------------------------------
+     Partners
+     ---
+     To add a partner: drop the logo file into assets/partners/, then add
+     a new entry below with `src` and `name`. SVG and PNG both work.
+     ----------------------------------------------------------------------- */
+  var PARTNERS = [
+    // Example:
+    // { src: "assets/partners/example.png", name: "Example Partner" },
+  ];
+
+  /* -----------------------------------------------------------------------
+     Reference (lightbox)
+     ----------------------------------------------------------------------- */
+  var REFERENCE = {
+    src: "assets/timeline-overlays/site-vibe-reference-gemini.png",
+    caption:
+      "Early concept rendering. Used for visual mood only \u2014 not accurate for placement, scaffolding logic, or roof geometry. Refer to the timeline above for the actual sequence."
   };
 
-  /* DOM refs ---------------------------------------------------------------- */
-  var $ = function (id) {
-    return document.getElementById(id);
-  };
+  /* -----------------------------------------------------------------------
+     DOM
+     ----------------------------------------------------------------------- */
+  var $ = function (id) { return document.getElementById(id); };
 
-  var stage = $("image-stage");
-  var captionStep = $("caption-step");
-  var captionTitle = $("caption-title");
-  var captionDates = $("caption-dates");
-  var nowStepName = $("now-step-name");
-  var detailTitle = $("detail-title");
-  var detailDates = $("detail-dates");
-  var detailSummary = $("detail-summary");
-  var detailOnSite = $("detail-on-site");
-  var input = $("scrubber-input");
-  var progress = $("scrubber-progress");
-  var ticksEl = $("scrubber-ticks");
-  var prevBtn = $("ctrl-prev");
-  var nextBtn = $("ctrl-next");
-  var playBtn = $("ctrl-play");
-  var playIcon = $("ctrl-play-icon");
+  var captionStep, captionTitle, captionDates;
+  var nowStepName, detailTitle, detailDates, detailSummary, detailList;
+  var input, progress, ticksEl;
+  var prevBtn, nextBtn, playBtn, playIcon;
+  var LAYERS = {};
 
-  var LAYERS = {
-    scaffolding: $("layer-scaffolding"),
-    crane: $("layer-crane"),
-    dumpster: $("layer-dumpster"),
-    "materials-path": $("layer-materials"),
-    steeple: $("layer-steeple"),
-    "sanctuary-01": $("layer-sanctuary-01"),
-    "sanctuary-02": $("layer-sanctuary-02"),
-    "sanctuary-03": $("layer-sanctuary-03"),
-    "sanctuary-04": $("layer-sanctuary-04"),
-    after: $("layer-after")
-  };
-
-  /* State ------------------------------------------------------------------- */
   var currentIndex = 0;
   var playTimer = null;
   var playing = false;
 
-  /* Build ticks ------------------------------------------------------------- */
+  function bindDom() {
+    captionStep = $("caption-step");
+    captionTitle = $("caption-title");
+    captionDates = $("caption-dates");
+    nowStepName = $("now-step-name");
+    detailTitle = $("detail-title");
+    detailDates = $("detail-dates");
+    detailSummary = $("detail-summary");
+    detailList = $("detail-list");
+    input = $("scrubber-input");
+    progress = $("scrubber-progress");
+    ticksEl = $("scrubber-ticks");
+    prevBtn = $("ctrl-prev");
+    nextBtn = $("ctrl-next");
+    playBtn = $("ctrl-play");
+    playIcon = $("ctrl-play-icon");
+
+    LAYERS = {
+      scaffolding: $("layer-scaffolding"),
+      crane: $("layer-crane"),
+      dumpster: $("layer-dumpster"),
+      "materials-path": $("layer-materials"),
+      steeple: $("layer-steeple"),
+      "sanctuary-01": $("layer-sanctuary-01"),
+      "sanctuary-02": $("layer-sanctuary-02"),
+      "sanctuary-03": $("layer-sanctuary-03"),
+      "sanctuary-04": $("layer-sanctuary-04"),
+      after: $("layer-after")
+    };
+  }
+
+  /* -----------------------------------------------------------------------
+     Ticks
+     ----------------------------------------------------------------------- */
   function buildTicks() {
     var html = "";
     for (var i = 0; i < STEPS.length; i++) {
       var s = STEPS[i];
+      var num = String(s.id).padStart(2, "0");
       html +=
-        '<li class="tick" data-index="' +
-        i +
-        '" data-testid="tick-' +
-        s.id +
-        '">' +
+        '<li class="tick" data-index="' + i + '" data-testid="tick-' + s.id + '">' +
         '<span class="tick-dot" aria-hidden="true"></span>' +
-        '<span class="tick-num">' + String(s.id).padStart(2, "0") + '</span>' +
+        '<span class="tick-num">' + num + '</span>' +
         '<span class="tick-label">' + s.label + '</span>' +
-        "</li>";
+        '</li>';
     }
     ticksEl.innerHTML = html;
-
     var tickEls = ticksEl.querySelectorAll(".tick");
     for (var j = 0; j < tickEls.length; j++) {
       (function (el) {
@@ -266,70 +262,49 @@
     }
   }
 
-  /* Render ----------------------------------------------------------------- */
-  function setLayerVisible(layerId, visible) {
-    var node = LAYERS[layerId];
-    if (!node) return;
-    if (visible) node.classList.add("is-visible");
-    else node.classList.remove("is-visible");
+  /* -----------------------------------------------------------------------
+     Render
+     ----------------------------------------------------------------------- */
+  function setVisible(id, on) {
+    var n = LAYERS[id];
+    if (!n) return;
+    if (on) n.classList.add("is-visible");
+    else n.classList.remove("is-visible");
   }
 
-  function setMaskColor(layerId, color) {
-    var node = LAYERS[layerId];
-    if (!node) return;
-    node.style.backgroundColor = color;
+  function setColor(id, color) {
+    var n = LAYERS[id];
+    if (!n) return;
+    n.style.backgroundColor = color;
   }
 
   function applyStep(step) {
-    /* Reset every photo + mask layer first */
-    Object.keys(LAYERS).forEach(function (k) {
-      setLayerVisible(k, false);
-    });
-
-    /* Reset mask colors to their default active colors */
-    setMaskColor("steeple", COLORS.steeple);
-    setMaskColor("sanctuary-01", COLORS["sanctuary-01"]);
-    setMaskColor("sanctuary-02", COLORS["sanctuary-02"]);
-    setMaskColor("sanctuary-03", COLORS["sanctuary-03"]);
-    setMaskColor("sanctuary-04", COLORS["sanctuary-04"]);
-    setMaskColor("materials-path", COLORS.equipment);
-
-    /* Show declared layers */
-    step.visible.forEach(function (layerId) {
-      setLayerVisible(layerId, true);
-    });
-
-    /* Recolor completed mask layers to green */
-    step.completed.forEach(function (layerId) {
-      if (LAYERS[layerId]) {
-        setMaskColor(layerId, COLORS.complete);
-      }
+    Object.keys(LAYERS).forEach(function (k) { setVisible(k, false); });
+    setColor("steeple", COLOR_ACTIVE);
+    setColor("sanctuary-01", COLOR_ACTIVE);
+    setColor("sanctuary-02", COLOR_ACTIVE);
+    setColor("sanctuary-03", COLOR_ACTIVE);
+    setColor("sanctuary-04", COLOR_ACTIVE);
+    step.visible.forEach(function (id) { setVisible(id, true); });
+    step.completed.forEach(function (id) {
+      if (LAYERS[id]) setColor(id, COLOR_COMPLETE);
     });
   }
 
   function updateCopy(step) {
-    var stepLabel = "Step " + step.id + " of " + STEPS.length;
-    captionStep.textContent = stepLabel;
+    captionStep.textContent = "Step " + step.id + " of " + STEPS.length;
     captionTitle.textContent = step.label;
     captionDates.textContent = step.dates;
-
     nowStepName.textContent = step.label;
-
     detailTitle.textContent = step.label;
     detailDates.textContent = step.dates;
     detailSummary.textContent = step.summary;
 
-    var itemsHtml = "";
+    var listHtml = "";
     for (var i = 0; i < step.items.length; i++) {
-      var item = step.items[i];
-      itemsHtml +=
-        '<li><span class="pill-swatch" style="background:' +
-        item.c +
-        '"></span><span>' +
-        item.t +
-        "</span></li>";
+      listHtml += '<li><span class="pill"></span><span>' + step.items[i] + "</span></li>";
     }
-    detailOnSite.innerHTML = itemsHtml;
+    detailList.innerHTML = listHtml;
   }
 
   function updateTicks(index) {
@@ -358,7 +333,9 @@
     updateProgress(index);
   }
 
-  /* Play / pause ----------------------------------------------------------- */
+  /* -----------------------------------------------------------------------
+     Play / pause
+     ----------------------------------------------------------------------- */
   function setPlayIcon(isPlaying) {
     if (isPlaying) {
       playIcon.innerHTML =
@@ -377,10 +354,7 @@
     setPlayIcon(true);
     if (currentIndex >= STEPS.length - 1) goTo(0);
     playTimer = window.setInterval(function () {
-      if (currentIndex >= STEPS.length - 1) {
-        stopPlay();
-        return;
-      }
+      if (currentIndex >= STEPS.length - 1) { stopPlay(); return; }
       goTo(currentIndex + 1);
     }, 1800);
   }
@@ -388,59 +362,108 @@
   function stopPlay() {
     playing = false;
     setPlayIcon(false);
-    if (playTimer) {
-      window.clearInterval(playTimer);
-      playTimer = null;
-    }
+    if (playTimer) { window.clearInterval(playTimer); playTimer = null; }
   }
 
-  /* Event wiring ----------------------------------------------------------- */
+  /* -----------------------------------------------------------------------
+     Partners
+     ----------------------------------------------------------------------- */
+  function buildPartners() {
+    var grid = $("partners-grid");
+    var empty = $("partners-empty");
+    if (!PARTNERS.length) {
+      empty.hidden = false;
+      grid.innerHTML = "";
+      return;
+    }
+    empty.hidden = true;
+    var html = "";
+    for (var i = 0; i < PARTNERS.length; i++) {
+      var p = PARTNERS[i];
+      html +=
+        '<div class="partner-tile" data-testid="partner-tile">' +
+        '<img src="' + p.src + '" alt="' + p.name + '" loading="lazy" />' +
+        (p.name ? '<span class="partner-name">' + p.name + '</span>' : "") +
+        '</div>';
+    }
+    grid.innerHTML = html;
+  }
+
+  /* -----------------------------------------------------------------------
+     Lightbox
+     ----------------------------------------------------------------------- */
+  function initLightbox() {
+    var btn = $("reference-btn");
+    var box = $("lightbox");
+    var img = $("lightbox-img");
+    var cap = $("lightbox-caption");
+    var close = $("lightbox-close");
+
+    function open() {
+      img.src = REFERENCE.src;
+      cap.textContent = REFERENCE.caption;
+      box.hidden = false;
+      document.body.style.overflow = "hidden";
+      close.focus();
+    }
+    function shut() {
+      box.hidden = true;
+      document.body.style.overflow = "";
+    }
+    btn.addEventListener("click", open);
+    close.addEventListener("click", shut);
+    box.addEventListener("click", function (e) {
+      if (e.target === box) shut();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (!box.hidden && e.key === "Escape") shut();
+    });
+  }
+
+  /* -----------------------------------------------------------------------
+     Events
+     ----------------------------------------------------------------------- */
   function onInput() {
     var idx = parseInt(input.value, 10);
     if (Number.isNaN(idx)) idx = 0;
-    if (idx !== currentIndex) {
-      stopPlay();
-      goTo(idx);
-    }
+    if (idx !== currentIndex) { stopPlay(); goTo(idx); }
   }
+  function onPrev() { stopPlay(); goTo(currentIndex - 1); }
+  function onNext() { stopPlay(); goTo(currentIndex + 1); }
 
-  function onPrev() {
-    stopPlay();
-    goTo(currentIndex - 1);
-  }
-
-  function onNext() {
-    stopPlay();
-    goTo(currentIndex + 1);
-  }
-
-  function onKey(evt) {
-    if (evt.key === "ArrowRight") {
-      evt.preventDefault();
-      onNext();
-    } else if (evt.key === "ArrowLeft") {
-      evt.preventDefault();
-      onPrev();
-    } else if (evt.key === " " || evt.code === "Space") {
+  function onKey(e) {
+    var tag = (document.activeElement && document.activeElement.tagName) || "";
+    if (tag === "INPUT" && document.activeElement !== input) return;
+    if (e.key === "ArrowRight") { e.preventDefault(); onNext(); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); onPrev(); }
+    else if (e.key === " " || e.code === "Space") {
       if (document.activeElement === input) return;
-      evt.preventDefault();
-      if (playing) stopPlay();
-      else startPlay();
+      e.preventDefault();
+      if (playing) stopPlay(); else startPlay();
     }
   }
 
-  /* Init ------------------------------------------------------------------ */
-  function init() {
+  /* -----------------------------------------------------------------------
+     Init
+     ----------------------------------------------------------------------- */
+  function initApp() {
+    bindDom();
     buildTicks();
     goTo(0);
+    buildPartners();
+    initLightbox();
     input.addEventListener("input", onInput);
     prevBtn.addEventListener("click", onPrev);
     nextBtn.addEventListener("click", onNext);
     playBtn.addEventListener("click", function () {
-      if (playing) stopPlay();
-      else startPlay();
+      if (playing) stopPlay(); else startPlay();
     });
     document.addEventListener("keydown", onKey);
+  }
+
+  function init() {
+    initGate();
+    initApp();
   }
 
   if (document.readyState === "loading") {

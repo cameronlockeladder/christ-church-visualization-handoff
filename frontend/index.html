@@ -6,235 +6,339 @@
     <meta name="theme-color" content="#F2EDE3" />
     <meta
       name="description"
-      content="Christ Church Oak Brook — Roof Restoration Project Timeline. A scrub-through visualization of scaffolding, steeple, and sanctuary work from July through August 2026."
+      content="Christ Church Oak Brook — Roof Restoration project timeline. Board access only."
     />
-    <title>Christ Church Oak Brook · Roof Restoration Timeline</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Christ Church Oak Brook · Roof Restoration</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="preload" as="image" href="assets/timeline-overlays/base-existing-2392x1792.jpg" />
+    <link rel="icon" type="image/png" href="assets/brand/christ-church-logo.png" />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <a class="skip-link" href="#stage" data-testid="skip-link">Skip to content</a>
-
-    <header class="site-header" data-testid="site-header">
-      <div class="container header-row">
-        <div class="brand">
-          <div class="brand-mark" aria-hidden="true">CC</div>
-          <div class="brand-text">
-            <span class="brand-eyebrow">Christ Church &middot; Oak Brook</span>
-            <h1 class="brand-title">Roof Restoration Project</h1>
-          </div>
+  <body class="locked">
+    <!-- =================================================================
+         Access gate — board only.
+         Code is the street number (501). Persists in sessionStorage.
+         ================================================================= -->
+    <div class="gate" id="gate" data-testid="access-gate">
+      <div class="gate-card">
+        <div class="gate-brand">
+          <img
+            class="gate-logo gate-logo-cc"
+            src="assets/brand/christ-church-logo.png"
+            alt="Christ Church Oak Brook"
+          />
+          <span class="gate-divider" aria-hidden="true"></span>
+          <img
+            class="gate-logo gate-logo-ll"
+            src="assets/brand/locke-ladder-logo.png"
+            alt="Locke &amp; Ladder"
+          />
         </div>
-        <div class="header-meta" aria-label="Project window">
-          <span class="meta-label">Project Window</span>
-          <span class="meta-value">July &mdash; August 2026</span>
-        </div>
-      </div>
-    </header>
-
-    <main class="container main" id="stage">
-      <section class="lede">
-        <p class="lede-text">
-          A board-facing walkthrough of how the church property will look across each phase of the
-          roof restoration. Move the scrubber below to see what equipment is on site, what work is
-          underway, and what has been completed.
+        <h1 class="gate-title">Board Access</h1>
+        <p class="gate-help">
+          Enter the street number to view the restoration timeline.
         </p>
-      </section>
-
-      <section class="stage-wrap" aria-label="Project stage visualization">
-        <div class="stage" id="image-stage" data-testid="image-stage">
-          <img
-            class="layer base-layer"
-            src="assets/timeline-overlays/base-existing-2392x1792.jpg"
-            alt="Aerial view of Christ Church Oak Brook before work begins."
-          />
-
-          <img
-            class="layer photo-layer"
-            id="layer-scaffolding"
-            src="assets/timeline-overlays/scaffolding-overlay.png"
-            alt=""
-            aria-hidden="true"
-          />
-          <img
-            class="layer photo-layer"
-            id="layer-crane"
-            src="assets/timeline-overlays/crane-overlay.png"
-            alt=""
-            aria-hidden="true"
-          />
-          <img
-            class="layer photo-layer"
-            id="layer-dumpster"
-            src="assets/timeline-overlays/dumpster-overlay.png"
-            alt=""
-            aria-hidden="true"
-          />
-
-          <div class="layer mask-layer" id="layer-materials" data-mask="materials-path"></div>
-          <div class="layer mask-layer" id="layer-steeple" data-mask="steeple"></div>
-          <div class="layer mask-layer" id="layer-sanctuary-01" data-mask="sanctuary-01"></div>
-          <div class="layer mask-layer" id="layer-sanctuary-02" data-mask="sanctuary-02"></div>
-          <div class="layer mask-layer" id="layer-sanctuary-03" data-mask="sanctuary-03"></div>
-          <div class="layer mask-layer" id="layer-sanctuary-04" data-mask="sanctuary-04"></div>
-
-          <img
-            class="layer photo-layer"
-            id="layer-after"
-            src="assets/timeline-overlays/after-roof-only-overlay.png"
-            alt=""
-            aria-hidden="true"
-          />
-
-          <div class="stage-caption" id="stage-caption" data-testid="stage-caption">
-            <span class="caption-step" id="caption-step">Step 1 of 9</span>
-            <span class="caption-title" id="caption-title">Existing view</span>
-            <span class="caption-dates" id="caption-dates">Today</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="scrubber-wrap" aria-label="Timeline scrubber">
-        <div class="scrubber-head">
-          <div class="scrubber-now">
-            <span class="now-label">Current step</span>
-            <span class="now-value" id="now-step-name" data-testid="now-step-name">Existing view</span>
-          </div>
-          <div class="scrubber-controls">
-            <button class="ctrl" id="ctrl-prev" data-testid="ctrl-prev" aria-label="Previous step">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <button class="ctrl ctrl-play" id="ctrl-play" data-testid="ctrl-play" aria-label="Play timeline">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" id="ctrl-play-icon">
-                <path d="M8 5l11 7-11 7V5z" fill="currentColor"/>
-              </svg>
-            </button>
-            <button class="ctrl" id="ctrl-next" data-testid="ctrl-next" aria-label="Next step">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="scrubber" data-testid="scrubber">
-          <div class="scrubber-rail">
-            <div class="scrubber-track">
-              <div class="scrubber-progress" id="scrubber-progress"></div>
-            </div>
+        <form class="gate-form" id="gate-form" autocomplete="off">
+          <label class="gate-field" for="gate-input">
+            <span class="gate-field-label">Access code</span>
             <input
-              class="scrubber-input"
-              id="scrubber-input"
-              type="range"
-              min="0"
-              max="8"
-              step="1"
-              value="0"
-              aria-label="Project timeline step"
-              data-testid="scrubber-input"
+              id="gate-input"
+              class="gate-input"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
+              maxlength="6"
+              autocomplete="off"
+              data-testid="gate-input"
+              required
             />
+          </label>
+          <button class="gate-submit" type="submit" data-testid="gate-submit">
+            Enter
+          </button>
+          <p class="gate-error" id="gate-error" role="alert" aria-live="polite"></p>
+        </form>
+        <p class="gate-footnote">For board members and project staff only.</p>
+      </div>
+    </div>
+
+    <!-- =================================================================
+         Fixed brand mark (top-left).
+         ================================================================= -->
+    <aside class="brand-fixed" aria-label="Project sponsors" data-testid="brand-fixed">
+      <a class="brand-link" href="#stage">
+        <img
+          class="brand-img brand-img-cc"
+          src="assets/brand/christ-church-logo.png"
+          alt="Christ Church Oak Brook"
+        />
+      </a>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <a class="brand-link" href="#stage">
+        <img
+          class="brand-img brand-img-ll"
+          src="assets/brand/locke-ladder-logo.png"
+          alt="Locke &amp; Ladder"
+        />
+      </a>
+    </aside>
+
+    <!-- =================================================================
+         Main content
+         ================================================================= -->
+    <main class="main">
+      <div class="container">
+        <header class="page-head" id="stage">
+          <span class="page-eyebrow">Roof Restoration · Christ Church Oak Brook</span>
+          <h1 class="page-title">Project Timeline</h1>
+          <p class="page-sub">
+            July 6 — August 28, 2026. Drag the timeline to see what is on site on any
+            given day.
+          </p>
+        </header>
+
+        <section class="stage-wrap" aria-label="Project stage">
+          <div class="stage" id="image-stage" data-testid="image-stage">
+            <img
+              class="layer base-layer"
+              src="assets/timeline-overlays/base-existing-2392x1792.jpg"
+              alt="Aerial view of Christ Church Oak Brook."
+            />
+
+            <img class="layer photo-layer" id="layer-scaffolding"
+                 src="assets/timeline-overlays/scaffolding-overlay.png" alt="" aria-hidden="true" />
+            <img class="layer photo-layer" id="layer-crane"
+                 src="assets/timeline-overlays/crane-overlay.png" alt="" aria-hidden="true" />
+            <img class="layer photo-layer" id="layer-dumpster"
+                 src="assets/timeline-overlays/dumpster-overlay.png" alt="" aria-hidden="true" />
+
+            <div class="layer mask-layer" id="layer-materials"></div>
+            <div class="layer mask-layer" id="layer-steeple"></div>
+            <div class="layer mask-layer" id="layer-sanctuary-01"></div>
+            <div class="layer mask-layer" id="layer-sanctuary-02"></div>
+            <div class="layer mask-layer" id="layer-sanctuary-03"></div>
+            <div class="layer mask-layer" id="layer-sanctuary-04"></div>
+
+            <img class="layer photo-layer" id="layer-after"
+                 src="assets/timeline-overlays/after-roof-only-overlay.png" alt="" aria-hidden="true" />
+
+            <!-- Step caption (top-left, inside image) -->
+            <div class="stage-caption" id="stage-caption" data-testid="stage-caption">
+              <span class="caption-step" id="caption-step">Step 1 of 9</span>
+              <span class="caption-title" id="caption-title">Existing view</span>
+              <span class="caption-dates" id="caption-dates">Today</span>
+            </div>
+
+            <!-- Color key (bottom-right, inside image, sitting over a gradient) -->
+            <div class="stage-legend" data-testid="stage-legend">
+              <span class="legend-eyebrow">Color key</span>
+              <ul class="legend-list">
+                <li class="legend-row">
+                  <span class="swatch" style="background:#F2C744"></span>
+                  <span class="legend-text">Crane</span>
+                </li>
+                <li class="legend-row">
+                  <span class="swatch" style="background:#3D6EAA"></span>
+                  <span class="legend-text">Scaffolding</span>
+                </li>
+                <li class="legend-row">
+                  <span class="swatch" style="background:#3F7A50"></span>
+                  <span class="legend-text">Dumpster</span>
+                </li>
+                <li class="legend-row">
+                  <span class="swatch" style="background:#D9772C"></span>
+                  <span class="legend-text">Materials &amp; forklift path</span>
+                </li>
+              </ul>
+            </div>
+            <div class="stage-legend-gradient" aria-hidden="true"></div>
           </div>
-          <ol class="scrubber-ticks" id="scrubber-ticks"></ol>
-        </div>
-      </section>
+        </section>
 
-      <section class="detail-grid">
-        <article class="detail-card current-card" data-testid="current-detail">
-          <header class="detail-card-head">
-            <span class="detail-eyebrow" id="detail-dates">Today</span>
-            <h2 class="detail-title" id="detail-title">Existing view</h2>
+        <section class="scrubber-wrap" aria-label="Timeline">
+          <div class="scrubber-head">
+            <div class="scrubber-now">
+              <span class="now-label">Current step</span>
+              <span class="now-value" id="now-step-name" data-testid="now-step-name">Existing view</span>
+            </div>
+            <div class="scrubber-controls">
+              <button class="ctrl" id="ctrl-prev" data-testid="ctrl-prev" aria-label="Previous step">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="ctrl ctrl-play" id="ctrl-play" data-testid="ctrl-play" aria-label="Play timeline">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" id="ctrl-play-icon">
+                  <path d="M8 5l11 7-11 7V5z" fill="currentColor"/>
+                </svg>
+              </button>
+              <button class="ctrl" id="ctrl-next" data-testid="ctrl-next" aria-label="Next step">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="scrubber" data-testid="scrubber">
+            <div class="scrubber-rail">
+              <div class="scrubber-track">
+                <div class="scrubber-progress" id="scrubber-progress"></div>
+              </div>
+              <input
+                class="scrubber-input"
+                id="scrubber-input"
+                type="range"
+                min="0"
+                max="8"
+                step="1"
+                value="0"
+                aria-label="Project timeline step"
+                data-testid="scrubber-input"
+              />
+            </div>
+            <ol class="scrubber-ticks" id="scrubber-ticks"></ol>
+          </div>
+        </section>
+
+        <section class="detail-wrap" aria-label="Current step detail">
+          <article class="detail-card" data-testid="current-detail">
+            <header class="detail-head">
+              <span class="detail-eyebrow" id="detail-dates">Today</span>
+              <h2 class="detail-title" id="detail-title">Existing view</h2>
+            </header>
+            <p class="detail-summary" id="detail-summary">
+              The roof today. No work has started.
+            </p>
+            <ul class="detail-list" id="detail-list" aria-label="On site"></ul>
+          </article>
+        </section>
+
+        <!-- =================================================================
+             Partners (logos populated from PARTNERS list in app.js)
+             ================================================================= -->
+        <section class="partners-wrap" aria-label="Project partners" data-testid="partners">
+          <header class="section-head">
+            <span class="section-eyebrow">Partners</span>
+            <h2 class="section-title">Project Team</h2>
           </header>
-          <p class="detail-summary" id="detail-summary">
-            The roof as it stands today. No scaffolding, no equipment. Use the scrubber to step
-            forward through each phase of the project.
+          <div class="partners-grid" id="partners-grid"></div>
+          <p class="partners-empty" id="partners-empty" hidden>
+            Drop partner logos into
+            <code>assets/partners/</code>
+            and list them in the <code>PARTNERS</code> array in <code>app.js</code>.
           </p>
-          <ul class="detail-on-site" id="detail-on-site" aria-label="On site"></ul>
-        </article>
+        </section>
 
-        <article class="detail-card legend-card" aria-label="Color key">
-          <header class="detail-card-head">
-            <span class="detail-eyebrow">Color key</span>
-            <h2 class="detail-title">What you are looking at</h2>
+        <!-- =================================================================
+             Notes
+             ================================================================= -->
+        <section class="notes-wrap" aria-label="Project notes">
+          <header class="section-head">
+            <span class="section-eyebrow">Notes</span>
+            <h2 class="section-title">What to expect</h2>
           </header>
-          <ul class="legend-list">
-            <li class="legend-row">
-              <span class="swatch" style="background:#AF6D2C"></span>
-              <span class="legend-text">Steeple section &mdash; active</span>
-            </li>
-            <li class="legend-row">
-              <span class="swatch" style="background:#B56F39"></span>
-              <span class="legend-text">Sanctuary 1 &mdash; active</span>
-            </li>
-            <li class="legend-row">
-              <span class="swatch" style="background:#8F7B34"></span>
-              <span class="legend-text">Sanctuary 2 &mdash; active</span>
-            </li>
-            <li class="legend-row">
-              <span class="swatch" style="background:#4F7478"></span>
-              <span class="legend-text">Sanctuary 3 &mdash; active</span>
-            </li>
-            <li class="legend-row">
-              <span class="swatch" style="background:#7A6092"></span>
-              <span class="legend-text">Sanctuary 4 &mdash; active</span>
-            </li>
-            <li class="legend-row">
-              <span class="swatch" style="background:#3F7A50"></span>
-              <span class="legend-text">Completed section</span>
-            </li>
-          </ul>
-        </article>
-      </section>
+          <div class="notes-grid">
+            <article class="note-card">
+              <h3 class="note-title">Material staging</h3>
+              <p class="note-body">
+                Material is staged in the dedicated parking lot. From there it is moved
+                to the flat roof. A boom truck is brought out only to lift material.
+              </p>
+            </article>
+            <article class="note-card">
+              <h3 class="note-title">Stained glass</h3>
+              <p class="note-body">
+                Plywood protects the stained glass during work. It comes off for
+                services. The stained glass stays usable for Sundays.
+              </p>
+            </article>
+            <article class="note-card">
+              <h3 class="note-title">Phase 2 inspection</h3>
+              <p class="note-body">
+                The roof deck is inspected section by section. Any deck repairs are
+                done before new cedar is installed on that section.
+              </p>
+            </article>
+            <article class="note-card">
+              <h3 class="note-title">Sunday access</h3>
+              <p class="note-body">
+                The sanctuary stays in use throughout the project. Scaffolding stays
+                up around the sanctuary until the last section is finished.
+              </p>
+            </article>
+          </div>
+        </section>
 
-      <section class="notes-grid">
-        <article class="note-card">
-          <h3 class="note-title">Material Staging</h3>
-          <p class="note-body">
-            Material staging starts in the dedicated parking lot and is then moved to the flat
-            roof. A boom truck is brought out only when material needs to be lifted.
+        <!-- =================================================================
+             Design reference (modal — not immediately visible)
+             ================================================================= -->
+        <section class="reference-wrap" aria-label="Design reference">
+          <button class="reference-btn" id="reference-btn" data-testid="reference-btn">
+            <span class="reference-eyebrow">Reference</span>
+            <span class="reference-label">View early concept rendering</span>
+            <span class="reference-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="14" height="14">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <p class="reference-note">
+            Illustrative only. Not used for placement, scaffolding logic, or roof
+            geometry.
           </p>
-        </article>
-        <article class="note-card">
-          <h3 class="note-title">Stained Glass Protection</h3>
-          <p class="note-body">
-            Plywood protects the stained glass during work. Boards are removed during service
-            times &mdash; they are not permanently fixed to the wall. The stained glass remains
-            functional for Sunday and any additional services.
-          </p>
-        </article>
-        <article class="note-card">
-          <h3 class="note-title">Phase 2 Inspection</h3>
-          <p class="note-body">
-            During the sanctuary phase, the roof deck is inspected section by section. Any
-            deck-level mitigation is handled while that section is exposed, before new Brava
-            cedar is installed.
-          </p>
-        </article>
-        <article class="note-card price-card">
-          <h3 class="note-title">Investment</h3>
-          <p class="note-body price-body">
-            <span class="price-figure">Contract figure to be confirmed</span>
-            <span class="price-note">A final, line-item contract figure will be provided by Locke Ladder once scope is signed off.</span>
-          </p>
-        </article>
-      </section>
+        </section>
+
+        <!-- =================================================================
+             Total Investment — at the bottom, factual, single all-in number.
+             ================================================================= -->
+        <section class="investment-wrap" aria-label="Total investment" data-testid="investment">
+          <div class="investment-card">
+            <span class="investment-eyebrow">Total Investment</span>
+            <span class="investment-figure" data-testid="investment-figure">$1,073,660</span>
+            <p class="investment-note">
+              All-in. This is the full cost of the project — scaffolding, crane,
+              dumpster, material, labor, and cleanup.
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-row">
-        <span class="footer-credit">Christ Church Oak Brook &middot; Roof Restoration Timeline</span>
-        <span class="footer-credit footer-muted">Prepared by Locke Ladder &middot; Visualization for board review</span>
+        <span>Christ Church Oak Brook · Roof Restoration</span>
+        <span>Prepared by Locke &amp; Ladder</span>
       </div>
     </footer>
+
+    <!-- =================================================================
+         Reference lightbox
+         ================================================================= -->
+    <div class="lightbox" id="lightbox" data-testid="lightbox" hidden>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close" data-testid="lightbox-close">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <figure class="lightbox-figure">
+        <img
+          class="lightbox-img"
+          id="lightbox-img"
+          alt="Early concept rendering"
+        />
+        <figcaption class="lightbox-caption" id="lightbox-caption"></figcaption>
+      </figure>
+    </div>
 
     <script src="app.js"></script>
   </body>
