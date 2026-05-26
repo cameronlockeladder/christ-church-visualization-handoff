@@ -346,7 +346,7 @@
         </section>
 
         <!-- =================================================================
-             Documents (placeholders — replace `href="#"` when PDFs are pushed)
+             Documents
              ================================================================= -->
         <section class="docs-wrap" aria-label="Project documents" data-testid="docs">
           <header class="section-head">
@@ -355,7 +355,7 @@
             <p class="section-sub">Each link opens the source document.</p>
           </header>
           <div class="docs-grid">
-            <a class="doc-card" href="#" target="_blank" rel="noopener" data-doc="terms" data-testid="doc-terms">
+            <button class="doc-card" type="button" data-doc="terms" data-doc-target="terms" data-testid="doc-terms" aria-expanded="false" aria-controls="doc-panel">
               <span class="doc-kicker">Agreement</span>
               <span class="doc-title">Terms &amp; Conditions</span>
               <span class="doc-desc">The full project agreement covering scope, schedule, payment, and assumptions.</span>
@@ -364,8 +364,8 @@
                   <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-            </a>
-            <a class="doc-card" href="#" target="_blank" rel="noopener" data-doc="brava-warranty" data-testid="doc-brava">
+            </button>
+            <button class="doc-card" type="button" data-doc="brava-warranty" data-doc-target="brava" data-testid="doc-brava" aria-expanded="false" aria-controls="doc-panel">
               <span class="doc-kicker">Warranty</span>
               <span class="doc-title">Brava Roofing Warranty</span>
               <span class="doc-desc">Manufacturer warranty on the natural cedar Brava composite shake.</span>
@@ -374,8 +374,8 @@
                   <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-            </a>
-            <a class="doc-card" href="#" target="_blank" rel="noopener" data-doc="metal-warranty" data-testid="doc-metal">
+            </button>
+            <button class="doc-card" type="button" data-doc="metal-warranty" data-doc-target="metal" data-testid="doc-metal" aria-expanded="false" aria-controls="doc-panel">
               <span class="doc-kicker">Warranty</span>
               <span class="doc-title">Kynar Steel Warranty</span>
               <span class="doc-desc">Warranty on the 26-gauge Kynar-coated steel valleys, drip edge, and flashings.</span>
@@ -384,8 +384,8 @@
                   <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-            </a>
-            <a class="doc-card" href="#" target="_blank" rel="noopener" data-doc="osha" data-testid="doc-osha">
+            </button>
+            <button class="doc-card" type="button" data-doc="osha" data-doc-target="osha" data-testid="doc-osha" aria-expanded="false" aria-controls="doc-panel">
               <span class="doc-kicker">Credential</span>
               <span class="doc-title">OSHA Licenses &amp; Certifications</span>
               <span class="doc-desc">Safety credentials and current OSHA training records for the crew on site.</span>
@@ -394,8 +394,8 @@
                   <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-            </a>
-            <a class="doc-card" href="#" target="_blank" rel="noopener" data-doc="il-license" data-testid="doc-il">
+            </button>
+            <button class="doc-card" type="button" data-doc="il-license" data-doc-target="license" data-testid="doc-il" aria-expanded="false" aria-controls="doc-panel">
               <span class="doc-kicker">Credential</span>
               <span class="doc-title">Illinois State License</span>
               <span class="doc-desc">Locke &amp; Ladder's active Illinois roofing contractor license.</span>
@@ -404,8 +404,25 @@
                   <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-            </a>
+            </button>
           </div>
+          <article class="doc-panel" id="doc-panel" data-testid="doc-panel" hidden>
+            <header class="doc-panel-head">
+              <div>
+                <span class="doc-panel-kicker" id="doc-panel-kicker">Document</span>
+                <h3 class="doc-panel-title" id="doc-panel-title"></h3>
+                <p class="doc-panel-desc" id="doc-panel-desc"></p>
+              </div>
+              <div class="doc-panel-actions">
+                <a class="doc-direct-link" id="doc-direct-link" href="assets/docs/terms-and-conditions.pdf" target="_blank" rel="noopener">Open file</a>
+                <button class="doc-panel-close" id="doc-panel-close" type="button" aria-label="Close document preview">Close</button>
+              </div>
+            </header>
+            <div class="doc-viewer" id="doc-viewer">
+              <iframe class="doc-frame" id="doc-frame" title="Document preview"></iframe>
+              <img class="doc-image" id="doc-image" alt="" hidden />
+            </div>
+          </article>
         </section>
 
         <!-- =================================================================

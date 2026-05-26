@@ -183,6 +183,44 @@
       "Early concept rendering. Used for visual mood only \u2014 not accurate for placement, scaffolding logic, or roof geometry. Refer to the timeline above for the actual sequence."
   };
 
+  var DOCS = {
+    terms: {
+      kicker: "Agreement",
+      title: "Terms & Conditions",
+      desc: "The project agreement section covering scope, payment, schedule, and contract assumptions.",
+      type: "pdf",
+      src: "assets/docs/terms-and-conditions.pdf"
+    },
+    brava: {
+      kicker: "Warranty",
+      title: "Brava Roofing Warranty",
+      desc: "Brava limited lifetime manufacturer warranty for the composite cedar shake roofing material.",
+      type: "pdf",
+      src: "assets/docs/brava-limited-lifetime-warranty.pdf"
+    },
+    metal: {
+      kicker: "Warranty",
+      title: "Kynar Steel Warranty",
+      desc: "CMG Durapon70 PVDF 40 year limited warranty for the Kynar-coated metal package.",
+      type: "pdf",
+      src: "assets/docs/cmg-durapon70-pvdf-40-year-warranty.pdf"
+    },
+    osha: {
+      kicker: "Credential",
+      title: "OSHA Licenses & Certifications",
+      desc: "OSHA 10 card and OSHA 10 certificate pages from the project packet.",
+      type: "pdf",
+      src: "assets/docs/osha-card-and-certificate.pdf"
+    },
+    license: {
+      kicker: "Credential",
+      title: "Illinois State License",
+      desc: "Locke & Ladder active Illinois roofing contractor license certificate.",
+      type: "image",
+      src: "assets/docs/illinois-roofing-contractor-license-locke-ladder.png"
+    }
+  };
+
   /* -----------------------------------------------------------------------
      DOM
      ----------------------------------------------------------------------- */
@@ -194,6 +232,8 @@
   var prevBtn, nextBtn, playBtn, playIcon;
   var dateForm, dateInput;
   var todayChip, todayLabel;
+  var docPanel, docPanelKicker, docPanelTitle, docPanelDesc;
+  var docDirectLink, docFrame, docImage, docClose;
   var LAYERS = {};
 
   var currentIndex = 0;
@@ -220,6 +260,14 @@
     dateInput = $("date-jump-input");
     todayChip = $("today-chip");
     todayLabel = $("today-label");
+    docPanel = $("doc-panel");
+    docPanelKicker = $("doc-panel-kicker");
+    docPanelTitle = $("doc-panel-title");
+    docPanelDesc = $("doc-panel-desc");
+    docDirectLink = $("doc-direct-link");
+    docFrame = $("doc-frame");
+    docImage = $("doc-image");
+    docClose = $("doc-panel-close");
 
     LAYERS = {
       scaffolding: $("layer-scaffolding"),
@@ -472,6 +520,73 @@
   }
 
   /* -----------------------------------------------------------------------
+     Document previews
+     ----------------------------------------------------------------------- */
+  function initDocuments() {
+    if (!docPanel) return;
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".doc-card[data-doc-target]"));
+
+    function clearActive() {
+      cards.forEach(function (card) {
+        card.classList.remove("is-active");
+        card.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    function closePanel() {
+      clearActive();
+      docPanel.hidden = true;
+      docFrame.src = "about:blank";
+      docImage.src = "";
+      docImage.hidden = true;
+      docFrame.hidden = false;
+    }
+
+    function openDoc(key, card) {
+      var doc = DOCS[key];
+      if (!doc) return;
+      clearActive();
+      card.classList.add("is-active");
+      card.setAttribute("aria-expanded", "true");
+
+      docPanelKicker.textContent = doc.kicker;
+      docPanelTitle.textContent = doc.title;
+      docPanelDesc.textContent = doc.desc;
+      docDirectLink.href = doc.src;
+      docDirectLink.textContent = doc.type === "image" ? "Open image" : "Open PDF";
+
+      if (doc.type === "image") {
+        docFrame.hidden = true;
+        docFrame.src = "about:blank";
+        docImage.hidden = false;
+        docImage.src = doc.src;
+        docImage.alt = doc.title;
+      } else {
+        docImage.hidden = true;
+        docImage.src = "";
+        docFrame.hidden = false;
+        docFrame.src = doc.src + "#toolbar=1&navpanes=0";
+      }
+
+      docPanel.hidden = false;
+      docPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    cards.forEach(function (card) {
+      card.addEventListener("click", function () {
+        var key = card.getAttribute("data-doc-target");
+        if (card.classList.contains("is-active") && !docPanel.hidden) {
+          closePanel();
+        } else {
+          openDoc(key, card);
+        }
+      });
+    });
+
+    if (docClose) docClose.addEventListener("click", closePanel);
+  }
+
+  /* -----------------------------------------------------------------------
      Date jump
      ----------------------------------------------------------------------- */
   function initDateJump() {
@@ -560,6 +675,7 @@
     goTo(0);
     buildMarquee();
     initLightbox();
+    initDocuments();
     initDateJump();
     initTodayChip();
     input.addEventListener("input", onInput);
