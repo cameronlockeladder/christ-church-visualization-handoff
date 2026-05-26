@@ -9,6 +9,9 @@ Purpose-built handoff repo for creating a board-facing interactive staging visua
 - `prototype/` - current static image slider prototype. It starts at frame `0180` and removes source frames `0098-0106`.
 - `sketches/` - Chris's rough hand sketches showing scaffold/crane/dumpster/route intent.
 - `source-notes/` - meeting notes, transcript export, rough plan notes, and source email/doc files.
+- `source-documents/locke-ladder-estimate-2026-05-20/` - supplied estimate PDF plus page-range section splits.
+- `contractor-credentials/` - Illinois roofing license image plus OSHA card/certificate PDFs.
+- `product-materials/` - Brava Cedar Shake and Kynar/Burnished Slate/26 gauge metal reference materials.
 - `eagleview/` - EagleView PDF/pages and aerial reference.
 - `photoshop-drafts/` - source/working PSD drafts when included.
 - `assets/reference-renders/` - reference exports from earlier attempts. Treat rejected-placement images as structure/style references only, not placement truth.
