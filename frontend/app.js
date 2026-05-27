@@ -184,13 +184,6 @@
   };
 
   var DOCS = {
-    terms: {
-      kicker: "Agreement",
-      title: "Terms & Conditions",
-      desc: "The project agreement section covering scope, payment, schedule, and contract assumptions.",
-      type: "pdf",
-      src: "assets/docs/terms-and-conditions.pdf"
-    },
     brava: {
       kicker: "Warranty",
       title: "Brava Roofing Warranty",
